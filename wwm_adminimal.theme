@@ -76,12 +76,12 @@ function wwm_adminimal_form_system_theme_settings_alter(&$form, \Drupal\Core\For
     '#weight' => -10,
   ];
 
-  // $form['adminimal_custom']['custom_css'] = [
-  //   '#type' => 'checkbox',
-  //   '#title' => t('Use "adminimal-custom.css"'),
-  //   '#description' => t('Include adminimal-custom.css file to override or add custom css code without subthememing/hacking Adminimal Theme.'),
-  //   '#default_value' => theme_get_setting('custom_css'),
-  // ];
+  $form['adminimal_custom']['custom_css'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Use "adminimal-custom.css"'),
+    '#description' => t('Include adminimal-custom.css file to override or add custom css code without subthememing/hacking Adminimal Theme.'),
+    '#default_value' => theme_get_setting('custom_css'),
+  ];
 
   $form['adminimal_custom']['adminimal_custom_check'] = [
     '#type' => 'fieldset',
@@ -120,7 +120,7 @@ function wwm_adminimal_form_system_theme_settings_alter(&$form, \Drupal\Core\For
 
   $form['wwm_adminimal_settings'] = [
     '#type' => 'details',
-    '#title' => t('Adminimal theme settings'),
+    '#title' => t('WWM Adminimal theme settings'),
     '#open' => TRUE,
   ];
 
