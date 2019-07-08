@@ -2,7 +2,7 @@ name: WWM Adminimal
 type: theme
 description: 'Drupal administration theme with modern minimalist design. Customized for WWM projects'
 core: 8.x
-base theme: adminimal_theme
+base theme: seven
 
 libraries:
   - wwm_adminimal/global-styling
