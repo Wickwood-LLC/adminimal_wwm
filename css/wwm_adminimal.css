@@ -1204,4 +1204,32 @@ input[type=radio].error:focus:checked {
   display: block;
   margin-top: 1.2rem;
 }
+
+.secondary-tabs.is-collapse-enabled ul.tabs {
+  overflow: hidden;
+  border: 1px solid #434343;
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 44px;
+}
+
+.secondary-tabs.is-collapse-enabled ul.tabs.is-open {
+  padding-bottom: 0;
+}
+
+.secondary-tabs.is-collapse-enabled ul.tabs .tabs__tab {
+  border-top: 1px solid #d9d8d4;
+}
+
+.secondary-tabs.is-collapse-enabled ul.tabs .tabs__tab.is-active {
+  border: 0;
+}
+
+.secondary-tabs.is-collapse-enabled ul.tabs .tabs__tab:hover {
+  background-color: #0074bd;
+}
+
+.secondary-tabs.is-collapse-enabled ul.tabs .tabs__tab:hover a {
+  color: white;
+}
 /*# sourceMappingURL=wwm_adminimal.css.map */
