@@ -1456,3 +1456,11 @@ input[type=radio] {
     }
   }
 }
+
+#toolbar-administration {
+  nav[aria-label="User account actions"] {
+    ul.toolbar-menu {
+      float: right;
+    }
+  }
+}

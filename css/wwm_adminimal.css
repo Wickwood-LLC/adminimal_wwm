@@ -1232,4 +1232,8 @@ input[type=radio].error:focus:checked {
 .secondary-tabs.is-collapse-enabled ul.tabs .tabs__tab:hover a {
   color: white;
 }
+
+#toolbar-administration nav[aria-label="User account actions"] ul.toolbar-menu {
+  float: right;
+}
 /*# sourceMappingURL=wwm_adminimal.css.map */
