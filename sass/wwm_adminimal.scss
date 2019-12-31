@@ -1464,3 +1464,18 @@ input[type=radio] {
     }
   }
 }
+
+#field-ui-field-storage-add-form {
+  .form-item-label .machine-name-source {
+    width: 100%;
+  }
+  .form-item-field-name .field-prefix {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .machine-name-target {
+      flex: 1;
+    }
+  }
+}

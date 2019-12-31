@@ -1236,4 +1236,18 @@ input[type=radio].error:focus:checked {
 #toolbar-administration nav[aria-label="User account actions"] ul.toolbar-menu {
   float: right;
 }
+
+#field-ui-field-storage-add-form .form-item-label .machine-name-source {
+  width: 100%;
+}
+
+#field-ui-field-storage-add-form .form-item-field-name .field-prefix {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#field-ui-field-storage-add-form .form-item-field-name .field-prefix .machine-name-target {
+  flex: 1;
+}
 /*# sourceMappingURL=wwm_adminimal.css.map */
