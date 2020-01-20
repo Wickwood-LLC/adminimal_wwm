@@ -1267,4 +1267,8 @@ input[type=radio].error:focus:checked {
 #drupal-modal.ui-widget-content.ui-dialog-content {
   overflow: auto !important;
 }
+
+#drupal-modal.ui-widget-content.ui-dialog-content .scroll {
+  overflow: unset !important;
+}
 /*# sourceMappingURL=wwm_adminimal.css.map */
