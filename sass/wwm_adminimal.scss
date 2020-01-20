@@ -1479,3 +1479,7 @@ input[type=radio] {
     }
   }
 }
+
+#drupal-modal.ui-widget-content.ui-dialog-content {
+  overflow: auto !important;
+}
