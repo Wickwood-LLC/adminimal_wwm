@@ -14,6 +14,9 @@ libraries-override:
         /core/themes/stable/css/system/components/system-status-report-counters.css: /core/themes/seven/css/components/system-status-report-counters.css
         /core/themes/stable/css/system/components/system-status-report-general-info.css: /core/themes/seven/css/components/system-status-report-general-info.css
 
+ckeditor_stylesheets:
+  - css/ckeditor-styles.css
+
 regions:
   header: 'Header'
   pre_content: 'Pre-content'
