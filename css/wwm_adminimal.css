@@ -95,7 +95,6 @@
 }
 
 .adminimal .is-horizontal .tabs__tab {
-  -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
 
@@ -168,7 +167,6 @@
   background-color: #f9f9f9;
   border-radius: 0;
   text-shadow: none;
-  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 }
 
@@ -323,7 +321,6 @@
 }
 
 .adminimal .toolbar .toolbar-tray-vertical a {
-  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 }
 
@@ -345,7 +342,6 @@
 }
 
 .adminimal .toolbar .toolbar-tray-horizontal .menu-item {
-  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 }
 
@@ -508,7 +504,6 @@
 
 .adminimal .ui-dialog .ui-dialog-titlebar-close {
   opacity: 0.5;
-  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 }
 
@@ -675,7 +670,6 @@
 
 .adminimal .vertical-tabs__menu-item a {
   border: none;
-  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 }
 
@@ -920,7 +914,6 @@ input[type=checkbox] {
   border: 1px solid #b5b5b5;
   width: 16px !important;
   height: 16px !important;
-  -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
   outline: none;
 }
@@ -935,7 +928,6 @@ input[type=checkbox]#edit-delete {
   border: 1px solid #b5b5b5;
   width: 16px !important;
   height: 16px !important;
-  -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
   outline: none;
   margin-bottom: 0;
@@ -1018,7 +1010,6 @@ input[type=radio] {
   border: 1px solid #b5b5b5;
   width: 16px !important;
   height: 16px !important;
-  -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
   outline: none;
   border-radius: 50%;
@@ -1188,7 +1179,6 @@ input[type=radio].error:focus:checked {
 }
 
 .menu-item a {
-  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 }
 
@@ -1252,16 +1242,13 @@ input[type=radio].error:focus:checked {
 }
 
 #field-ui-field-storage-add-form .form-item-field-name .field-prefix {
-  display: -webkit-box;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #field-ui-field-storage-add-form .form-item-field-name .field-prefix .machine-name-target {
-  -webkit-box-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 #drupal-modal.ui-widget-content.ui-dialog-content {

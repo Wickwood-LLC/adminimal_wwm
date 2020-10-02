@@ -964,6 +964,12 @@
     border-radius: 20px;
   }
 }
+.views-exposed-form {
+  .form--inline > .form-item {
+    float: none;
+    display: inline-block;
+  }
+}
 
 [dir="rtl"] {
   .adminimal {
