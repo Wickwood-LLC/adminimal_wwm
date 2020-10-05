@@ -315,6 +315,27 @@
   border-radius: 0;
 }
 
+.adminimal #user-form .field--name-user-picture .image-widget {
+  display: flex;
+}
+
+.adminimal #user-form .field--name-user-picture .image-widget .image-preview {
+  flex: 0 auto;
+}
+
+.adminimal #user-form .field--name-user-picture .image-widget .image-widget-data {
+  flex: 1 1 auto;
+}
+
+.adminimal #user-form .field--name-user-picture .image-widget .image-widget-data input.form-text {
+  width: 100%;
+}
+
+.adminimal #user-form .address-fieldset,
+.adminimal #user-form .phone-fieldset {
+  padding: 0 18px 18px;
+}
+
 .adminimal .toolbar .toolbar-tray-vertical {
   border: none;
   box-shadow: none;

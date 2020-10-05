@@ -379,6 +379,29 @@
     }
   }
 
+  #user-form {
+    .field--name-user-picture {
+      .image-widget {
+        display: flex;
+
+        .image-preview {
+          flex: 0 auto;
+        }
+        .image-widget-data {
+          flex: 1 1 auto;
+
+          input.form-text {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .address-fieldset,
+    .phone-fieldset {
+      padding: 0 18px 18px;
+    }
+  }
+
   .toolbar {
     .toolbar-tray-vertical {
       border: none;
