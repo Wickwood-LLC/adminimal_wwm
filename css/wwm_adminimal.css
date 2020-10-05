@@ -332,6 +332,10 @@
   background-position-x: right;
 }
 
+.adminimal #user-form .form-type-checkbox label:after {
+  content: "";
+}
+
 .adminimal #user-form .field--type-datetime .label:after {
   content: ":\00a0";
   display: inline;
@@ -352,7 +356,7 @@
 .adminimal #user-form .form-type-email .description,
 .adminimal #user-form .form-type-password .description,
 .adminimal #user-form .field--type-datetime .description {
-  flex: 1;
+  flex: 1 100%;
 }
 
 .adminimal #user-form #edit-group-user .form-type-textfield label, .adminimal #user-form #edit-group-user .form-type-textfield .label,
@@ -445,6 +449,25 @@ div[class*="inline-entity-form-field-note-date-wrapper"] input {
   flex: 1 1 calc(100% - 69px);
 }
 
+.adminimal #user-form #edit-status {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.adminimal #user-form #edit-status .form-item {
+  margin-right: 2em;
+}
+
+.adminimal #user-form #edit-roles {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.adminimal #user-form #edit-roles .form-item {
+  margin-right: 1em;
+  flex: 0 0 140px;
+}
+
 .adminimal #user-form .field--name-user-picture .image-widget {
   display: flex;
 }
@@ -464,6 +487,10 @@ div[class*="inline-entity-form-field-note-date-wrapper"] input {
 .adminimal #user-form #edit-group-phone,
 .adminimal #user-form #edit-group-address {
   padding: 0 18px 18px;
+}
+
+.adminimal #user-form .paragraphs-add-wrapper {
+  text-align: center;
 }
 
 .adminimal .toolbar .toolbar-tray-vertical {
