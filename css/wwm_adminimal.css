@@ -315,6 +315,25 @@
   border-radius: 0;
 }
 
+.adminimal #user-form label[for] {
+  display: inline-block;
+}
+
+.adminimal #user-form label[for]:after {
+  content: ": ";
+  display: inline;
+}
+
+.adminimal #user-form .field--type-datetime .label,
+.adminimal #user-form .field--type-datetime > .container-inline {
+  display: inline-block;
+}
+
+.adminimal #user-form .field--type-datetime .label:after {
+  content: ": ";
+  display: inline;
+}
+
 .adminimal #user-form .field--name-user-picture .image-widget {
   display: flex;
 }

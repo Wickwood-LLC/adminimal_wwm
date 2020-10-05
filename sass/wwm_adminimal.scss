@@ -380,6 +380,30 @@
   }
 
   #user-form {
+    label[for] {
+      display: inline-block;
+
+      &:after {
+        content: ": ";
+        display: inline;
+      }
+    }
+
+    .field--type-datetime {
+      .label,
+      > .container-inline {
+        display: inline-block;
+      }
+      .label:after {
+        content: ": ";
+        display: inline;
+      }
+    }
+
+
+    #edit-group-user {
+      
+    }
     .field--name-user-picture {
       .image-widget {
         display: flex;
