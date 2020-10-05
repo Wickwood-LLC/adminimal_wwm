@@ -385,23 +385,34 @@
 
       &:after {
         content: ": ";
-        display: inline;
+        display: inline-block;
         vertical-align: baseline;
       }
+
       &.form-required:after {
-        width: 14px;
+        width: 12px;
         margin: 0;
+        background-position-x: right;
       }
     }
 
+    .field--type-datetime .label:after {
+      content: ": ";
+      display: inline;
+    }
+
+    .form-type-textfield,
+    .form-type-select,
+    .field--widget-datetime-default,
+    .form-type-email,
+    .form-type-password,
     .field--type-datetime {
-      .label,
-      > .container-inline {
-        display: inline-block;
-      }
-      .label:after {
-        content: ": ";
-        display: inline;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline;
+
+      .description {
+        flex: 1;
       }
     }
 
