@@ -320,7 +320,7 @@
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget .image-preview {
-  flex: 0 auto;
+  flex: 1 0 auto;
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget .image-widget-data {
