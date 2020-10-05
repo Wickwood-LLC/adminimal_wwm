@@ -384,26 +384,26 @@
       display: inline-block;
 
       &:after {
-        content: ": ";
+        content: ":\00a0";
         display: inline-block;
         vertical-align: baseline;
       }
 
       &.form-required:after {
         width: 12px;
+        margin-right: 0.3em;
         margin: 0;
         background-position-x: right;
       }
     }
 
     .field--type-datetime .label:after {
-      content: ": ";
+      content: ":\00a0";
       display: inline;
     }
 
     .form-type-textfield,
     .form-type-select,
-    .field--widget-datetime-default,
     .form-type-email,
     .form-type-password,
     .field--type-datetime {
@@ -416,10 +416,21 @@
       }
     }
 
-
     #edit-group-user {
-      
+      .form-type-textfield,
+      .form-type-select,
+      .form-type-email,
+      .form-type-password,
+      .field--type-datetime {
+        label {
+          flex: 0 0 91px;
+        }
+        input {
+          flex: 1 1 calc(100% - 91px);
+        }
+      }
     }
+
     .field--name-user-picture {
       .image-widget {
         display: flex;
