@@ -355,11 +355,15 @@
   flex: 1;
 }
 
-.adminimal #user-form #edit-group-user .form-type-textfield label,
+.adminimal #user-form #edit-group-user .form-type-textfield label, .adminimal #user-form #edit-group-user .form-type-textfield .label,
 .adminimal #user-form #edit-group-user .form-type-select label,
+.adminimal #user-form #edit-group-user .form-type-select .label,
 .adminimal #user-form #edit-group-user .form-type-email label,
+.adminimal #user-form #edit-group-user .form-type-email .label,
 .adminimal #user-form #edit-group-user .form-type-password label,
-.adminimal #user-form #edit-group-user .field--type-datetime label {
+.adminimal #user-form #edit-group-user .form-type-password .label,
+.adminimal #user-form #edit-group-user .field--type-datetime label,
+.adminimal #user-form #edit-group-user .field--type-datetime .label {
   flex: 0 0 91px;
 }
 
@@ -369,6 +373,76 @@
 .adminimal #user-form #edit-group-user .form-type-password input,
 .adminimal #user-form #edit-group-user .field--type-datetime input {
   flex: 1 1 calc(100% - 91px);
+}
+
+.adminimal #user-form #edit-group-user-login-info .form-type-textfield label, .adminimal #user-form #edit-group-user-login-info .form-type-textfield .label,
+.adminimal #user-form #edit-group-user-login-info .form-type-select label,
+.adminimal #user-form #edit-group-user-login-info .form-type-select .label,
+.adminimal #user-form #edit-group-user-login-info .form-type-email label,
+.adminimal #user-form #edit-group-user-login-info .form-type-email .label,
+.adminimal #user-form #edit-group-user-login-info .form-type-password label,
+.adminimal #user-form #edit-group-user-login-info .form-type-password .label,
+.adminimal #user-form #edit-group-user-login-info .field--type-datetime label,
+.adminimal #user-form #edit-group-user-login-info .field--type-datetime .label {
+  flex: 0 0 122px;
+}
+
+.adminimal #user-form #edit-group-user-login-info .form-type-textfield input,
+.adminimal #user-form #edit-group-user-login-info .form-type-select input,
+.adminimal #user-form #edit-group-user-login-info .form-type-email input,
+.adminimal #user-form #edit-group-user-login-info .form-type-password input,
+.adminimal #user-form #edit-group-user-login-info .field--type-datetime input {
+  flex: 1 1 calc(100% - 122px);
+}
+
+.adminimal #user-form #edit-group-address div[class*="address-locality"] label, .adminimal #user-form #edit-group-address div[class*="address-locality"] .label,
+.adminimal #user-form #edit-group-address div[class*="address-administrative-area"] label,
+.adminimal #user-form #edit-group-address div[class*="address-administrative-area"] .label,
+.adminimal #user-form #edit-group-address div[class*="address-postal-code"] label,
+.adminimal #user-form #edit-group-address div[class*="address-postal-code"] .label {
+  flex: 0 0 60px;
+}
+
+.adminimal #user-form #edit-group-address div[class*="address-locality"] input,
+.adminimal #user-form #edit-group-address div[class*="address-administrative-area"] input,
+.adminimal #user-form #edit-group-address div[class*="address-postal-code"] input {
+  flex: 1 1 calc(100% - 60px);
+}
+
+.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-number"] label, .adminimal #user-form #edit-group-phone div[class*="subform-field-phone-number"] .label,
+.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-type"] label,
+.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-type"] .label {
+  flex: 0 0 103px;
+}
+
+.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-number"] input,
+.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-type"] input {
+  flex: 1 1 calc(100% - 103px);
+}
+
+.adminimal #user-form #edit-group-source .form-item-field-source label, .adminimal #user-form #edit-group-source .form-item-field-source .label,
+.adminimal #user-form #edit-group-source .field--name-field-source-date label,
+.adminimal #user-form #edit-group-source .field--name-field-source-date .label {
+  flex: 0 0 83px;
+}
+
+.adminimal #user-form #edit-group-source .form-item-field-source input,
+.adminimal #user-form #edit-group-source .field--name-field-source-date input {
+  flex: 1 1 calc(100% - 83px);
+}
+
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] label, .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] .label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"]
+div[class*="inline-entity-form-field-note-date-wrapper"] label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"]
+div[class*="inline-entity-form-field-note-date-wrapper"] .label {
+  flex: 0 0 69px;
+}
+
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] input,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"]
+div[class*="inline-entity-form-field-note-date-wrapper"] input {
+  flex: 1 1 calc(100% - 69px);
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget {
@@ -387,8 +461,8 @@
   width: 100%;
 }
 
-.adminimal #user-form .address-fieldset,
-.adminimal #user-form .phone-fieldset {
+.adminimal #user-form #edit-group-phone,
+.adminimal #user-form #edit-group-address {
   padding: 0 18px 18px;
 }
 
