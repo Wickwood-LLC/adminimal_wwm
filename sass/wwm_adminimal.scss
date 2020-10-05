@@ -386,6 +386,11 @@
       &:after {
         content: ": ";
         display: inline;
+        vertical-align: baseline;
+      }
+      &.form-required:after {
+        width: 14px;
+        margin: 0;
       }
     }
 

@@ -322,6 +322,12 @@
 .adminimal #user-form label[for]:after {
   content: ": ";
   display: inline;
+  vertical-align: baseline;
+}
+
+.adminimal #user-form label[for].form-required:after {
+  width: 14px;
+  margin: 0;
 }
 
 .adminimal #user-form .field--type-datetime .label,
