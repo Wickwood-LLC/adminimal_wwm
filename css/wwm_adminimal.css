@@ -474,6 +474,10 @@
   flex: 0 0 69px;
 }
 
+.adminimal #user-form #edit-group-source .form-type-number .field-prefix {
+  margin-right: 0.2em;
+}
+
 .adminimal #user-form #edit-status {
   display: flex;
   flex-flow: row wrap;
