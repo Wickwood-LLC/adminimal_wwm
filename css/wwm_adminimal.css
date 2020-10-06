@@ -39,7 +39,7 @@
   max-width: 1500px;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: calc(1500px + 5em)) {
   .adminimal .layout-container {
     margin: auto;
   }
