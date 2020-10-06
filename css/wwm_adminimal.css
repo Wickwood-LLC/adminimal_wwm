@@ -355,6 +355,7 @@
 .adminimal #user-form .form-type-select,
 .adminimal #user-form .form-type-email,
 .adminimal #user-form .form-type-password,
+.adminimal #user-form .form-type-tel,
 .adminimal #user-form .field--type-datetime {
   display: flex;
   flex-flow: row wrap;
@@ -365,14 +366,17 @@
 .adminimal #user-form .form-type-select input,
 .adminimal #user-form .form-type-email input,
 .adminimal #user-form .form-type-password input,
+.adminimal #user-form .form-type-tel input,
 .adminimal #user-form .field--type-datetime input {
   min-width: 2em;
+  max-width: 100%;
 }
 
 .adminimal #user-form .form-type-textfield .description,
 .adminimal #user-form .form-type-select .description,
 .adminimal #user-form .form-type-email .description,
 .adminimal #user-form .form-type-password .description,
+.adminimal #user-form .form-type-tel .description,
 .adminimal #user-form .field--type-datetime .description {
   flex: 1 100%;
 }
@@ -382,8 +386,6 @@
 .adminimal #user-form #edit-group-user .form-type-select .label,
 .adminimal #user-form #edit-group-user .form-type-email label,
 .adminimal #user-form #edit-group-user .form-type-email .label,
-.adminimal #user-form #edit-group-user .form-type-password label,
-.adminimal #user-form #edit-group-user .form-type-password .label,
 .adminimal #user-form #edit-group-user .field--type-datetime label,
 .adminimal #user-form #edit-group-user .field--type-datetime .label {
   flex: 0 0 calc(91px + 0.4em);
@@ -392,7 +394,6 @@
 .adminimal #user-form #edit-group-user .form-type-textfield input,
 .adminimal #user-form #edit-group-user .form-type-select input,
 .adminimal #user-form #edit-group-user .form-type-email input,
-.adminimal #user-form #edit-group-user .form-type-password input,
 .adminimal #user-form #edit-group-user .field--type-datetime input {
   flex: 1 1 calc(100% - 91px - 2em);
 }
@@ -417,29 +418,33 @@
   flex: 1 1 calc(100% - 122px - 2em);
 }
 
-.adminimal #user-form #group-address div[class*="address-locality"] label, .adminimal #user-form #group-address div[class*="address-locality"] .label,
+.adminimal #user-form #group-address div[class*="address-country-code"] label, .adminimal #user-form #group-address div[class*="address-country-code"] .label,
+.adminimal #user-form #group-address div[class*="address-locality"] label,
+.adminimal #user-form #group-address div[class*="address-locality"] .label,
 .adminimal #user-form #group-address div[class*="address-administrative-area"] label,
 .adminimal #user-form #group-address div[class*="address-administrative-area"] .label,
 .adminimal #user-form #group-address div[class*="address-postal-code"] label,
 .adminimal #user-form #group-address div[class*="address-postal-code"] .label {
-  flex: 0 0 calc(60px - 0.4em);
+  flex: 0 0 calc(60px + 0.4em);
 }
 
+.adminimal #user-form #group-address div[class*="address-country-code"] input,
 .adminimal #user-form #group-address div[class*="address-locality"] input,
 .adminimal #user-form #group-address div[class*="address-administrative-area"] input,
 .adminimal #user-form #group-address div[class*="address-postal-code"] input {
   flex: 1 1 calc(100% - 60px - 2em);
 }
 
+.adminimal #user-form #group-address div[class*="address-address-line1"] input,
+.adminimal #user-form #group-address div[class*="address-address-line2"] input {
+  flex: 100%;
+  width: 100%;
+}
+
 .adminimal #user-form #group-phone div[class*="subform-field-phone-number"] label, .adminimal #user-form #group-phone div[class*="subform-field-phone-number"] .label,
 .adminimal #user-form #group-phone div[class*="subform-field-phone-type"] label,
 .adminimal #user-form #group-phone div[class*="subform-field-phone-type"] .label {
-  flex: 0 0 calc(103px - 0.4em);
-}
-
-.adminimal #user-form #group-phone div[class*="subform-field-phone-number"] input,
-.adminimal #user-form #group-phone div[class*="subform-field-phone-type"] input {
-  flex: 1 1 calc(100% - 103px - 2em);
+  flex: 0 0 calc(103px + 0.4em);
 }
 
 .adminimal #user-form #edit-group-source .form-item-field-source label, .adminimal #user-form #edit-group-source .form-item-field-source .label,
