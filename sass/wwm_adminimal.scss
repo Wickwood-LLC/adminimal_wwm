@@ -304,7 +304,7 @@
     text-shadow: none;
   }
 
-  label {
+  label, .label {
     margin: 0 0.2em 0.2em;
   }
 
@@ -503,7 +503,7 @@
         }
       }
       div[class*="inline-entity-form-field-gift-card"],
-      div[class*="inline-entity-form-field-amount"]
+      div[class*="inline-entity-form-field-amount"],
       div[class*="inline-entity-form-field-note-date-wrapper"] {
         label, .label {
           flex: 0 0 69px;
@@ -528,7 +528,7 @@
 
       .form-item {
         margin-right: 1em;
-        flex: 0 0 140px;
+        flex: 0 0 143px;
       }
     }
 

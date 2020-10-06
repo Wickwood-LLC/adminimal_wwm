@@ -266,7 +266,7 @@
   text-shadow: none;
 }
 
-.adminimal label {
+.adminimal label, .adminimal .label {
   margin: 0 0.2em 0.2em;
 }
 
@@ -459,16 +459,16 @@
 }
 
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] label, .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] .label,
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"]
-div[class*="inline-entity-form-field-note-date-wrapper"] label,
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"]
-div[class*="inline-entity-form-field-note-date-wrapper"] .label {
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] .label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] .label {
   flex: 0 0 69px;
 }
 
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] input,
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"]
-div[class*="inline-entity-form-field-note-date-wrapper"] input {
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] input,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] input {
   flex: 1 1 calc(100% - 69px);
 }
 
@@ -488,7 +488,7 @@ div[class*="inline-entity-form-field-note-date-wrapper"] input {
 
 .adminimal #user-form #edit-roles .form-item {
   margin-right: 1em;
-  flex: 0 0 140px;
+  flex: 0 0 143px;
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget {
