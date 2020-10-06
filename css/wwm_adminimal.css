@@ -417,28 +417,28 @@
   flex: 1 1 calc(100% - 122px - 2em);
 }
 
-.adminimal #user-form #edit-group-address div[class*="address-locality"] label, .adminimal #user-form #edit-group-address div[class*="address-locality"] .label,
-.adminimal #user-form #edit-group-address div[class*="address-administrative-area"] label,
-.adminimal #user-form #edit-group-address div[class*="address-administrative-area"] .label,
-.adminimal #user-form #edit-group-address div[class*="address-postal-code"] label,
-.adminimal #user-form #edit-group-address div[class*="address-postal-code"] .label {
+.adminimal #user-form #group-address div[class*="address-locality"] label, .adminimal #user-form #group-address div[class*="address-locality"] .label,
+.adminimal #user-form #group-address div[class*="address-administrative-area"] label,
+.adminimal #user-form #group-address div[class*="address-administrative-area"] .label,
+.adminimal #user-form #group-address div[class*="address-postal-code"] label,
+.adminimal #user-form #group-address div[class*="address-postal-code"] .label {
   flex: 0 0 calc(60px - 0.4em);
 }
 
-.adminimal #user-form #edit-group-address div[class*="address-locality"] input,
-.adminimal #user-form #edit-group-address div[class*="address-administrative-area"] input,
-.adminimal #user-form #edit-group-address div[class*="address-postal-code"] input {
+.adminimal #user-form #group-address div[class*="address-locality"] input,
+.adminimal #user-form #group-address div[class*="address-administrative-area"] input,
+.adminimal #user-form #group-address div[class*="address-postal-code"] input {
   flex: 1 1 calc(100% - 60px - 2em);
 }
 
-.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-number"] label, .adminimal #user-form #edit-group-phone div[class*="subform-field-phone-number"] .label,
-.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-type"] label,
-.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-type"] .label {
+.adminimal #user-form #group-phone div[class*="subform-field-phone-number"] label, .adminimal #user-form #group-phone div[class*="subform-field-phone-number"] .label,
+.adminimal #user-form #group-phone div[class*="subform-field-phone-type"] label,
+.adminimal #user-form #group-phone div[class*="subform-field-phone-type"] .label {
   flex: 0 0 calc(103px - 0.4em);
 }
 
-.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-number"] input,
-.adminimal #user-form #edit-group-phone div[class*="subform-field-phone-type"] input {
+.adminimal #user-form #group-phone div[class*="subform-field-phone-number"] input,
+.adminimal #user-form #group-phone div[class*="subform-field-phone-type"] input {
   flex: 1 1 calc(100% - 103px - 2em);
 }
 
