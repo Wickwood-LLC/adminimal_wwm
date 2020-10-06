@@ -300,8 +300,11 @@
 
   select {
     min-height: 28px;
-
     text-shadow: none;
+
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
   }
 
   label, .label {
@@ -427,7 +430,7 @@
       align-items: baseline;
 
       input {
-        min-width: 2em;
+        min-width: 10em;
         max-width: 100%;
       }
 
