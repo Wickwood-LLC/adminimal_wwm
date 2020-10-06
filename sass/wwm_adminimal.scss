@@ -41,6 +41,14 @@
     padding: 2rem 0 0;
   }
 
+  .layout-container {
+    max-width: 1500px;
+
+    @media screen and (min-width: calc(1500px + 5em)) {
+      margin: auto;
+    }
+  }
+
   thead {
     th {
       border: none;
@@ -297,7 +305,7 @@
   }
 
   label {
-    margin: 0 0 0.2em;
+    margin: 0 0.2em 0.2em;
   }
 
   input {
@@ -429,10 +437,11 @@
       .form-type-password,
       .field--type-datetime {
         label, .label {
-          flex: 0 0 91px;
+          flex: 0 0 calc(91px + 0.2em);
         }
         input {
-          flex: 1 1 calc(100% - 91px);
+          flex: 1 1 calc(100% - 91px - 0.6em)
+          ;
         }
       }
     }

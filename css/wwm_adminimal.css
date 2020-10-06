@@ -35,6 +35,16 @@
   padding: 2rem 0 0;
 }
 
+.adminimal .layout-container {
+  max-width: 1500px;
+}
+
+@media screen and (min-width: 1500px) {
+  .adminimal .layout-container {
+    margin: auto;
+  }
+}
+
 .adminimal thead th {
   border: none;
   color: #909090;
@@ -257,7 +267,7 @@
 }
 
 .adminimal label {
-  margin: 0 0 0.2em;
+  margin: 0 0.2em 0.2em;
 }
 
 .adminimal input.form-autocomplete {
@@ -368,7 +378,7 @@
 .adminimal #user-form #edit-group-user .form-type-password .label,
 .adminimal #user-form #edit-group-user .field--type-datetime label,
 .adminimal #user-form #edit-group-user .field--type-datetime .label {
-  flex: 0 0 91px;
+  flex: 0 0 calc(91px + 0.2em);
 }
 
 .adminimal #user-form #edit-group-user .form-type-textfield input,
@@ -376,7 +386,7 @@
 .adminimal #user-form #edit-group-user .form-type-email input,
 .adminimal #user-form #edit-group-user .form-type-password input,
 .adminimal #user-form #edit-group-user .field--type-datetime input {
-  flex: 1 1 calc(100% - 91px);
+  flex: 1 1 calc(100% - 91px - 0.6em);
 }
 
 .adminimal #user-form #edit-group-user-login-info .form-type-textfield label, .adminimal #user-form #edit-group-user-login-info .form-type-textfield .label,
