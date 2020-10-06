@@ -458,18 +458,20 @@
   flex: 1 1 calc(100% - 83px);
 }
 
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"],
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"],
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] label, .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] .label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] .label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] .label {
   flex: 0 0 69px;
-}
-
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] input,
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] input,
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] input {
-  flex: 1 1 calc(100% - 69px);
 }
 
 .adminimal #user-form #edit-status {

@@ -505,11 +505,12 @@
       div[class*="inline-entity-form-field-gift-card"],
       div[class*="inline-entity-form-field-amount"],
       div[class*="inline-entity-form-field-note-date-wrapper"] {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        
         label, .label {
           flex: 0 0 69px;
-        }
-        input {
-          flex: 1 1 calc(100% - 69px);
         }
       }
     }
