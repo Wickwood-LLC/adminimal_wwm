@@ -511,10 +511,11 @@
 
 .adminimal #user-form .field--name-user-picture .image-widget .image-widget-data input.form-text {
   width: 100%;
+  max-width: 450px;
 }
 
-.adminimal #user-form #edit-group-phone,
-.adminimal #user-form #edit-group-address {
+.adminimal #user-form #group-phone,
+.adminimal #user-form #group-address {
   padding: 0 18px 18px;
 }
 

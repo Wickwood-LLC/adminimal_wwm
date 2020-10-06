@@ -549,12 +549,13 @@
 
           input.form-text {
             width: 100%;
+            max-width: 450px;
           }
         }
       }
     }
-    #edit-group-phone,
-    #edit-group-address {
+    #group-phone,
+    #group-address {
       padding: 0 18px 18px;
     }
 
