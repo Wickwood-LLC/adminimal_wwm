@@ -39,7 +39,7 @@
   max-width: 1500px;
 }
 
-@media screen and (min-width: calc(1500px + 5em)) {
+@media screen and (min-width: 1500px) {
   .adminimal .layout-container {
     margin: auto;
   }
@@ -1455,4 +1455,5 @@ input[type=radio].error:focus:checked {
 form#pathauto-pattern-list td:nth-child(2) {
   word-break: break-word;
 }
+
 /*# sourceMappingURL=wwm_adminimal.css.map */
