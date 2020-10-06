@@ -430,7 +430,7 @@
       align-items: baseline;
 
       input {
-        min-width: 226px;
+        min-width: 195px;
         max-width: 100%;
       }
 
@@ -562,6 +562,7 @@
     #group-phone,
     #group-address {
       padding: 18px;
+      overflow: auto;
 
       .fieldset-wrapper {
         display: flex;

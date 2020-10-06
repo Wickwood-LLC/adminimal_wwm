@@ -374,7 +374,7 @@
 .adminimal #user-form .form-type-password input,
 .adminimal #user-form .form-type-tel input,
 .adminimal #user-form .field--type-datetime input {
-  min-width: 226px;
+  min-width: 195px;
   max-width: 100%;
 }
 
@@ -525,6 +525,7 @@
 .adminimal #user-form #group-phone,
 .adminimal #user-form #group-address {
   padding: 18px;
+  overflow: auto;
 }
 
 .adminimal #user-form #group-phone .fieldset-wrapper,
