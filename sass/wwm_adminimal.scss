@@ -425,6 +425,10 @@
       flex-flow: row wrap;
       align-items: baseline;
 
+      input {
+        min-width: 2em;
+      }
+
       .description {
         flex: 1 100%;
       }
@@ -437,10 +441,10 @@
       .form-type-password,
       .field--type-datetime {
         label, .label {
-          flex: 0 0 calc(91px + 0.2em);
+          flex: 0 0 calc(91px + 0.4em);
         }
         input {
-          flex: 1 1 calc(100% - 91px - 0.6em)
+          flex: 1 1 calc(100% - 91px - 2em)
           ;
         }
       }
@@ -452,10 +456,10 @@
       .form-type-password,
       .field--type-datetime {
         label, .label {
-          flex: 0 0 122px;
+          flex: 0 0 calc(122px + 0.4em);
         }
         input {
-          flex: 1 1 calc(100% - 122px);
+          flex: 1 1 calc(100% - 122px - 2em);
         }
       }
     }
@@ -464,10 +468,10 @@
       div[class*="address-administrative-area"],
       div[class*="address-postal-code"] {
         label, .label {
-          flex: 0 0 60px;
+          flex: 0 0 calc(60px - 0.4em);
         }
         input {
-          flex: 1 1 calc(100% - 60px);
+          flex: 1 1 calc(100% - 60px - 2em);
         }
       }
     }
@@ -475,10 +479,10 @@
       div[class*="subform-field-phone-number"],
       div[class*="subform-field-phone-type"] {
         label, .label {
-          flex: 0 0 103px;
+          flex: 0 0 calc(103px - 0.4em);
         }
         input {
-          flex: 1 1 calc(100% - 103px);
+          flex: 1 1 calc(100% - 103px - 2em);
         }
       }
     }
