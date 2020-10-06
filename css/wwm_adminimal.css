@@ -516,7 +516,18 @@
 
 .adminimal #user-form #group-phone,
 .adminimal #user-form #group-address {
-  padding: 0 18px 18px;
+  padding: 18px;
+}
+
+.adminimal #user-form #group-phone .fieldset-wrapper,
+.adminimal #user-form #group-address .fieldset-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.adminimal #user-form #group-phone .fieldset-wrapper .description,
+.adminimal #user-form #group-address .fieldset-wrapper .description {
+  order: -1;
 }
 
 .adminimal #user-form .paragraphs-add-wrapper {

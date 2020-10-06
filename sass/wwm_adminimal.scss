@@ -556,7 +556,16 @@
     }
     #group-phone,
     #group-address {
-      padding: 0 18px 18px;
+      padding: 18px;
+
+      .fieldset-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .description {
+          order: -1;
+        }
+      }
     }
 
     .paragraphs-add-wrapper {
