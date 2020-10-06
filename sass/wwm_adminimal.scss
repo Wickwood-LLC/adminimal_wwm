@@ -430,7 +430,7 @@
       align-items: baseline;
 
       input {
-        min-width: 10em;
+        min-width: 226px;
         max-width: 100%;
       }
 
@@ -543,12 +543,14 @@
     .field--name-user-picture {
       .image-widget {
         display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
 
         .image-preview {
-          flex: 1 0 auto;
+          flex: 0 0 144px;
         }
         .image-widget-data {
-          flex: 1 1 auto;
+          flex: 1 1 calc(100% - 154px);
 
           input.form-text {
             width: 100%;

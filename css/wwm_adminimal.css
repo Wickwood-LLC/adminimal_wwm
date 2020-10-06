@@ -374,7 +374,7 @@
 .adminimal #user-form .form-type-password input,
 .adminimal #user-form .form-type-tel input,
 .adminimal #user-form .field--type-datetime input {
-  min-width: 10em;
+  min-width: 226px;
   max-width: 100%;
 }
 
@@ -505,14 +505,16 @@
 
 .adminimal #user-form .field--name-user-picture .image-widget {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget .image-preview {
-  flex: 1 0 auto;
+  flex: 0 0 144px;
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget .image-widget-data {
-  flex: 1 1 auto;
+  flex: 1 1 calc(100% - 154px);
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget .image-widget-data input.form-text {
