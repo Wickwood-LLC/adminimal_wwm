@@ -541,6 +541,12 @@
   padding: 0 1em;
 }
 
+.adminimal #user-form #group-phone .paragraphs-subform,
+.adminimal #user-form #group-address .paragraphs-subform {
+  margin-left: -50px;
+  margin-right: 5px;
+}
+
 .adminimal #user-form .paragraphs-add-wrapper {
   text-align: center;
 }
