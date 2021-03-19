@@ -1503,4 +1503,32 @@ input[type=radio].error:focus:checked {
 form#pathauto-pattern-list td:nth-child(2) {
   word-break: break-word;
 }
+
+#edit-field-folder-target-id--wrapper {
+  width: 100%;
+  display: block;
+  margin: 0.5em 0;
+}
+
+#edit-field-folder-target-id--wrapper .form-checkboxes > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1px dotted #33333370;
+  padding: 0.5em;
+}
+
+#edit-field-folder-target-id--wrapper .form-checkboxes > ul > li:last-child {
+  margin-right: 0;
+}
+
+#edit-field-folder-target-id--wrapper .form-checkboxes > ul > li > div {
+  margin-right: 0;
+}
+
+#edit-field-folder-target-id--wrapper ul {
+  list-style: none;
+  padding: 0;
+}
 /*# sourceMappingURL=wwm_adminimal.css.map */

@@ -1712,3 +1712,34 @@ form#pathauto-pattern-list {
     word-break: break-word;
   }
 }
+
+#views-exposed-form-media-media-page-list {
+  
+}
+#edit-field-folder-target-id--wrapper {
+  width: 100%;
+  display: block;
+  margin: 0.5em 0;
+
+  .form-checkboxes > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: 1px dotted #33333370;
+    padding: 0.5em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    > div {
+      margin-right: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
