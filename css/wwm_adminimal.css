@@ -546,6 +546,7 @@
 .adminimal #user-form .payment-dates {
   display: flex;
   flex-flow: row wrap;
+  align-items: start;
 }
 
 .adminimal #user-form .payment-dates > div {
