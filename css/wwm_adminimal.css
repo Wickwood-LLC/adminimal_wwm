@@ -275,6 +275,7 @@
 .adminimal .form-type-textfield, .adminimal .form-type-number, .adminimal .form-type-select, .adminimal .form-type-email, .adminimal .form-type-password, .adminimal .form-type-tel {
   display: flex;
   flex-flow: row wrap;
+  align-items: baseline;
 }
 
 .adminimal .form-type-textfield input, .adminimal .form-type-number input, .adminimal .form-type-select input, .adminimal .form-type-email input, .adminimal .form-type-password input, .adminimal .form-type-tel input {

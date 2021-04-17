@@ -312,6 +312,7 @@
   .form-type-textfield, .form-type-number, .form-type-select, .form-type-email, .form-type-password, .form-type-tel {
     display: flex;
     flex-flow: row wrap;
+    align-items: baseline;
     
     input {
       flex: 1 1 calc(100% - var(--label-width));
