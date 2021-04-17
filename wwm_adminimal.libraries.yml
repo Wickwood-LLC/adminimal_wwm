@@ -15,3 +15,10 @@ custom-styling:
   css:
     theme:
       public://adminimal-custom.css: {}
+
+global-scripts:
+  version: VERSION
+  js:
+    js/wwm_adminimal.scripts.js: {}
+  dependencies:
+    - core/jquery

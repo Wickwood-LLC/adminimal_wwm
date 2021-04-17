@@ -309,8 +309,19 @@
     }
   }
 
+  .form-type-textfield, .form-type-number, .form-type-select, .form-type-email, .form-type-password, .form-type-tel {
+    display: flex;
+    flex-flow: row wrap;
+    
+    input {
+      flex: 1 1 calc(100% - var(--label-width));
+      min-width: 150px;
+    }
+  }
+
   label, .label {
     margin: 0 0.2em 0.2em;
+    display: inline-block;
   }
 
   input {
@@ -1166,6 +1177,10 @@
 
   .views-ui-dialog .views-override {
     background-color: #f6f6f6;
+  }
+
+  div[id*="add-more-wrapper"] {
+    overflow-x: auto;
   }
 
   .field-multiple-table .form-item {
