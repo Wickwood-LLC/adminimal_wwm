@@ -1139,7 +1139,8 @@
   background-color: #f6f6f6;
 }
 
-.adminimal div[id*="add-more-wrapper"] {
+.adminimal div[id*="add-more-wrapper"],
+.adminimal .seven-details__wrapper {
   overflow-x: auto;
 }
 
