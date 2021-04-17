@@ -6,6 +6,7 @@ base theme: adminimal_theme
 
 libraries:
   - wwm_adminimal/global-styling
+  - wwm_adminimal/global-scripts
 libraries-override:
   system/base:
     css:
