@@ -346,6 +346,10 @@
   display: inline-block;
 }
 
+.adminimal #user-form label[for].option {
+  display: inline;
+}
+
 .adminimal #user-form label[for]:after {
   content: ":\00a0";
   display: inline-block;
@@ -398,6 +402,16 @@
   flex: 1 100%;
 }
 
+.adminimal #user-form #edit-group-full-name .field--name-field-prefix,
+.adminimal #user-form #edit-group-full-name .field--name-field-suffix {
+  display: inline-block;
+}
+
+.adminimal #user-form #edit-group-full-name #edit-field-mhcc-position {
+  -webkit-column-width: 200px;
+          column-width: 200px;
+}
+
 .adminimal #user-form #edit-group-user .form-type-textfield label, .adminimal #user-form #edit-group-user .form-type-textfield .label,
 .adminimal #user-form #edit-group-user .form-type-select label,
 .adminimal #user-form #edit-group-user .form-type-select .label,
@@ -413,6 +427,20 @@
 .adminimal #user-form #edit-group-user .form-type-email input,
 .adminimal #user-form #edit-group-user .field--type-datetime input {
   flex: 1 1 calc(100% - 91px - 2em);
+}
+
+.adminimal #user-form #edit-group-website-user-information #edit-status--wrapper .fieldset-legend:after {
+  content: ":\00a0";
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.adminimal #user-form #edit-group-website-user-information #edit-status--wrapper .form-item-status label:after {
+  display: none;
+}
+
+.adminimal #user-form #edit-group-website-user-information #edit-roles {
+  display: block;
 }
 
 .adminimal #user-form #edit-group-user-login-info .form-type-textfield label, .adminimal #user-form #edit-group-user-login-info .form-type-textfield .label,
@@ -433,6 +461,16 @@
 .adminimal #user-form #edit-group-user-login-info .form-type-password input,
 .adminimal #user-form #edit-group-user-login-info .field--type-datetime input {
   flex: 1 1 calc(100% - 122px - 2em);
+}
+
+.adminimal #user-form #edit-field-mailing-address-wrapper .address-line1,
+.adminimal #user-form #edit-field-mailing-address-wrapper .address-line2 {
+  flex: 100%;
+}
+
+.adminimal #user-form #edit-field-mailing-address-wrapper div[class*="address-administrative-area"],
+.adminimal #user-form #edit-field-mailing-address-wrapper div[class*="address-postal-code"] {
+  display: inline-flex;
 }
 
 .adminimal #user-form #group-address div[class*="address-country-code"] label, .adminimal #user-form #group-address div[class*="address-country-code"] .label,
@@ -456,6 +494,11 @@
 .adminimal #user-form #group-address div[class*="address-address-line2"] input {
   flex: 100%;
   width: 100%;
+}
+
+.adminimal #user-form #edit-group-phone-numbers input.form-tel {
+  width: 9em;
+  min-width: unset;
 }
 
 .adminimal #user-form #group-phone div[class*="subform-field-phone-number"] label, .adminimal #user-form #group-phone div[class*="subform-field-phone-number"] .label,
@@ -493,6 +536,22 @@
 
 .adminimal #user-form #edit-group-source .form-type-number .field-prefix {
   margin-right: 0.2em;
+}
+
+.adminimal #user-form #edit-group-allow-public-sharing-of-in .field--name-field-license-plate input {
+  width: 8em;
+  min-width: unset;
+}
+
+.adminimal #user-form .payment-dates {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.adminimal #user-form .payment-dates > div {
+  flex: 1 1 0;
+  padding: 0 0.5em;
+  min-width: 250px;
 }
 
 .adminimal #user-form #edit-status {

@@ -406,6 +406,10 @@
   #user-form {
     label[for] {
       display: inline-block;
+      
+      &.option {
+        display: inline; 
+      }
 
       &:after {
         content: ":\00a0";
@@ -452,6 +456,17 @@
       }
     }
 
+    #edit-group-full-name {
+      .field--name-field-prefix,
+      .field--name-field-suffix {
+        display: inline-block;
+      }
+
+      #edit-field-mhcc-position {
+        column-width: 200px;
+      }
+    }
+
     #edit-group-user {
       .form-type-textfield,
       .form-type-select,
@@ -466,6 +481,23 @@
         }
       }
     }
+    #edit-group-website-user-information {
+      #edit-status--wrapper {
+        .fieldset-legend:after {
+          content: ":\00a0";
+          display: inline-block;
+          vertical-align: baseline;
+        }
+
+        .form-item-status label:after {
+          display: none;
+        }
+      }
+
+      #edit-roles {
+        display: block;
+      }
+    }
     #edit-group-user-login-info {
       .form-type-textfield,
       .form-type-select,
@@ -478,6 +510,16 @@
         input {
           flex: 1 1 calc(100% - 122px - 2em);
         }
+      }
+    }
+    #edit-field-mailing-address-wrapper {
+      .address-line1,
+      .address-line2 {
+        flex: 100%;
+      }
+      div[class*="address-administrative-area"],
+      div[class*="address-postal-code"] {
+        display: inline-flex;
       }
     }
     #group-address {
@@ -498,6 +540,12 @@
           flex: 100%;
           width: 100%;
         }
+      }
+    }
+    #edit-group-phone-numbers {
+      input.form-tel {
+        width: 9em;
+        min-width: unset;
       }
     }
     #group-phone {
@@ -532,6 +580,22 @@
 
       .form-type-number .field-prefix {
         margin-right: 0.2em;
+      }
+    }
+
+    #edit-group-allow-public-sharing-of-in {
+      .field--name-field-license-plate input {
+        width: 8em;
+        min-width: unset;
+      }
+    }
+    .payment-dates {
+      display: flex;
+      flex-flow: row wrap;
+      > div {
+        flex: 1 1 0;
+        padding: 0 0.5em;
+        min-width: 250px;
       }
     }
 
