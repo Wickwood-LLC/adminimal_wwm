@@ -16,9 +16,9 @@ custom-styling:
     theme:
       public://adminimal-custom.css: {}
 
-global-scripts:
-  version: VERSION
-  js:
-    js/adminimal_wwm.scripts.js: {}
-  dependencies:
-    - core/jquery
+# global-scripts:
+#   version: VERSION
+#   js:
+#     js/adminimal_wwm.scripts.js: {}
+#   dependencies:
+#     - core/jquery
