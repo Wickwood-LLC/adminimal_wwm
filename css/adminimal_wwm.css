@@ -1186,6 +1186,12 @@
   margin-right: 0;
 }
 
+[dir="rtl"] .adminimal .is-horizontal .tabs.primary .tabs__tab a {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: .6em 1em .6em 1em;
+}
+
 [dir="rtl"] .adminimal .is-horizontal ul.tabs.secondary li:first-of-type {
   margin-left: 1em;
   margin-right: 0;
@@ -1780,4 +1786,4 @@ form#pathauto-pattern-list td:nth-child(2) {
     flex: 0 1 calc(50% - 1em);
   }
 }
-/*# sourceMappingURL=wwm_adminimal.css.map */
+/*# sourceMappingURL=adminimal_wwm.css.map */

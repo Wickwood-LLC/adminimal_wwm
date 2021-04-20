@@ -1304,6 +1304,12 @@
           margin-left: 0;
           margin-right: 0;
         }
+
+        a {
+          font-weight: bold;
+          font-size: 1.2em;
+          padding: .6em 1em .6em 1em;
+        }
       }
 
       ul.tabs.secondary li:first-of-type {

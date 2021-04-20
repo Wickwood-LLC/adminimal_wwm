@@ -756,23 +756,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/sass/adminimal_wwm.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/sass/adminimal_wwm-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/sass/adminimal_wwm.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/sass/adminimal_wwm.css.map",
-		"oF": 0
-		},
 	"/sass/adminimal_wwm.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -781,8 +764,8 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/sass/adminimal_wwm.css",
-		"oF": 0,
+		"oAP": "/css/adminimal_wwm.css",
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},

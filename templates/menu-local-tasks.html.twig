@@ -16,14 +16,14 @@
 {% if primary %}
   <h2 id="primary-tabs-title" class="visually-hidden">{{ 'Primary tabs'|t }}</h2>
   <nav role="navigation" class="is-horizontal is-collapsible" aria-labelledby="primary-tabs-title" data-drupal-nav-tabs>
-    <button class="reset-appearance tabs__tab tabs__trigger" aria-label="{{ 'Primary tabs display toggle'|t }}" data-drupal-nav-tabs-trigger>&bull;&bull;&bull;</button>
+    <button class="reset-appearance tabs__tab tabs__trigger" aria-label="{{ 'Primary tabs display toggle'|t }}" data-drupal-nav-tabs-trigger>&#9776;</button>
     <ul class="tabs primary clearfix" data-drupal-nav-tabs-target>{{ primary }}</ul>
   </nav>
 {% endif %}
 {% if secondary %}
   <h2 id="secondary-tabs-title" class="visually-hidden">{{ 'Secondary tabs'|t }}</h2>
   <nav role="navigation" class="secondary-tabs is-horizontal is-collapsible" aria-labelledby="secondary-tabs-title" data-drupal-nav-tabs>
-    <button class="reset-appearance tabs__tab tabs__trigger" aria-label="{{ 'Secondary tabs display toggle'|t }}" data-drupal-nav-tabs-trigger>&bull;&bull;&bull;</button>
+    <button class="reset-appearance tabs__tab tabs__trigger" aria-label="{{ 'Secondary tabs display toggle'|t }}" data-drupal-nav-tabs-trigger>&#9776;</button>
     <ul class="tabs secondary clearfix" data-drupal-nav-tabs-target>{{ secondary }}</ul>
   </nav>
 {% endif %}
