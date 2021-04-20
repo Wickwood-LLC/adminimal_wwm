@@ -4,9 +4,9 @@ dependencies:
   module:
     - user
   theme:
-    - wwm_adminimal
-id: wwm_adminimal_login
-theme: wwm_adminimal
+    - adminimal_wwm
+id: adminimal_wwm_login
+theme: adminimal_wwm
 region: content
 weight: 10
 provider: null

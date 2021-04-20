@@ -2,7 +2,7 @@ global-styling:
   version: VERSION
   css:
     base:
-      css/wwm_adminimal.css: {}
+      css/adminimal_wwm.css: {}
 
 google-fonts:
   version: VERSION
@@ -19,6 +19,6 @@ custom-styling:
 global-scripts:
   version: VERSION
   js:
-    js/wwm_adminimal.scripts.js: {}
+    js/adminimal_wwm.scripts.js: {}
   dependencies:
     - core/jquery

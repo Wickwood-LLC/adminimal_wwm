@@ -4,9 +4,9 @@ dependencies:
   module:
     - help
   theme:
-    - wwm_adminimal
-id: wwm_adminimal_help
-theme: wwm_adminimal
+    - adminimal_wwm
+id: adminimal_wwm_help
+theme: adminimal_wwm
 region: help
 weight: 0
 provider: null

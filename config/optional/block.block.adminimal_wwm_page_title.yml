@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - wwm_adminimal
-id: wwm_adminimal_page_title
-theme: wwm_adminimal
+    - adminimal_wwm
+id: adminimal_wwm_page_title
+theme: adminimal_wwm
 region: header
 weight: -30
 provider: null
