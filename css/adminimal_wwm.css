@@ -282,7 +282,6 @@
 
 .adminimal .form-type-textfield input, .adminimal .form-type-number input, .adminimal .form-type-select input, .adminimal .form-type-email input, .adminimal .form-type-password input, .adminimal .form-type-tel input {
   flex: 1 1 calc(100% - var(--label-width));
-  min-width: 150px;
 }
 
 .adminimal label, .adminimal .label {
