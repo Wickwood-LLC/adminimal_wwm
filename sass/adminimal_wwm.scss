@@ -310,17 +310,19 @@
     }
   }
 
-  .form-type-textfield, .form-type-number, .form-type-select, .form-type-email, .form-type-password, .form-type-tel {
+  .form-type-textfield,
+  .form-type-number,
+  .form-type-select,
+  .form-type-email,
+  .form-type-password,
+  .form-type-tel {
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
-    
-    input {
-      flex: 1 1 calc(100% - var(--label-width));
-    }
   }
 
-  label, .label {
+  label,
+  .label {
     margin: 0 0.2em 0.2em;
     display: inline-block;
   }
@@ -338,6 +340,7 @@
       box-shadow: none;
 
       border-radius: 0;
+      width: 100%;
     }
 
     &.form-tel {
@@ -407,9 +410,9 @@
   #user-form {
     label[for] {
       display: inline-block;
-      
+
       &.option {
-        display: inline; 
+        display: inline;
       }
 
       &:after {
@@ -457,6 +460,7 @@
     }
 
     #edit-group-full-name {
+
       .field--name-field-prefix,
       .field--name-field-suffix {
         display: inline-block;
@@ -468,19 +472,23 @@
     }
 
     #edit-group-user {
+
       .form-type-textfield,
       .form-type-select,
       .form-type-email,
       .field--type-datetime {
-        label, .label {
+
+        label,
+        .label {
           flex: 0 0 calc(91px + 0.4em);
         }
+
         input {
-          flex: 1 1 calc(100% - 91px - 2em)
-          ;
+          flex: 1 1 calc(100% - 91px - 2em);
         }
       }
     }
+
     #edit-group-website-user-information {
       #edit-status--wrapper {
         .fieldset-legend:after {
@@ -498,42 +506,65 @@
         display: block;
       }
     }
+
     #edit-group-user-login-info {
+
       .form-type-textfield,
       .form-type-select,
       .form-type-email,
       .form-type-password,
       .field--type-datetime {
-        label, .label {
+
+        label,
+        .label {
           flex: 0 0 calc(122px + 0.4em);
         }
+
         input {
           flex: 1 1 calc(100% - 122px - 2em);
         }
       }
     }
-    #edit-field-mailing-address-wrapper {
+
+    [id*="edit-field-mailing-address-wrapper"] {
+
       .address-line1,
       .address-line2 {
         flex: 100%;
       }
+
+      div[class*="address-line1"] {
+        text-transform: capitalize;
+      }
+
       div[class*="address-administrative-area"],
       div[class*="address-postal-code"] {
         display: inline-flex;
       }
+
+      div[class*="address-postal-code"] {
+        text-transform: capitalize;
+        width: 7em;
+      }
     }
+
     #group-address {
+
       div[class*="address-country-code"],
       div[class*="address-locality"],
       div[class*="address-administrative-area"],
       div[class*="address-postal-code"] {
-        label, .label {
+
+        label,
+        .label {
           flex: 0 0 calc(60px + 0.4em);
         }
+
         input {
           flex: 1 1 calc(100% - 60px - 2em);
         }
       }
+
       div[class*="address-address-line1"],
       div[class*="address-address-line2"] {
         input {
@@ -542,38 +573,56 @@
         }
       }
     }
+
     #edit-group-phone-numbers {
       input.form-tel {
         width: 9em;
         min-width: unset;
       }
+
+      .field--name-field-home-phone,
+      .field--name-field-cell-phone {
+        display: inline-block;
+        margin-right: 0.5em;
+      }
     }
+
     #group-phone {
+
       div[class*="subform-field-phone-number"],
       div[class*="subform-field-phone-type"] {
-        label, .label {
+
+        label,
+        .label {
           flex: 0 0 calc(103px + 0.4em);
         }
       }
     }
+
     #edit-group-source {
+
       .form-item-field-source,
       .field--name-field-source-date {
-        label, .label {
+
+        label,
+        .label {
           flex: 0 0 83px;
         }
+
         input {
           flex: 1 1 calc(100% - 83px);
         }
       }
+
       div[class*="inline-entity-form-field-gift-card"],
       div[class*="inline-entity-form-field-amount"],
       div[class*="inline-entity-form-field-note-date-wrapper"] {
         display: flex;
         flex-flow: row wrap;
         align-items: baseline;
-        
-        label, .label {
+
+        label,
+        .label {
           flex: 0 0 69px;
         }
       }
@@ -589,12 +638,13 @@
         min-width: unset;
       }
     }
+
     .payment-dates {
       display: flex;
       flex-flow: row wrap;
       align-items: start;
 
-      > div {
+      >div {
         flex: 1 1 0;
         padding: 0 0.5em;
         min-width: 250px;
@@ -604,11 +654,12 @@
     #edit-status {
       display: flex;
       flex-flow: row wrap;
-      
+
       .form-item {
         margin-right: 2em;
       }
     }
+
     #edit-roles {
       display: flex;
       flex-flow: row wrap;
@@ -628,6 +679,7 @@
         .image-preview {
           flex: 0 0 144px;
         }
+
         .image-widget-data {
           flex: 1 1 calc(100% - 154px);
 
@@ -638,6 +690,7 @@
         }
       }
     }
+
     #group-phone,
     #group-address {
       padding: 18px;
@@ -664,9 +717,7 @@
       text-align: center;
     }
 
-    .tabledrag-toggle-weight {
-      
-    }
+    .tabledrag-toggle-weight {}
   }
 
   .toolbar {
@@ -1245,11 +1296,6 @@
     background-color: #f6f6f6;
   }
 
-  div[id*="add-more-wrapper"],
-  .seven-details__wrapper {
-    overflow-x: auto;
-  }
-
   .field-multiple-table .form-item {
     margin: 0.75em 0;
   }
@@ -1258,11 +1304,20 @@
 
     border-radius: 20px;
   }
-  
+
   .views-exposed-form {
-    .form--inline > .form-item {
+    .form--inline>.form-item {
       float: none;
       display: inline-block;
+    }
+  }
+
+  table {
+    td {
+      padding: 0.5em;
+    }
+    .field-multiple-drag .handle {
+      margin: 0;
     }
   }
 }
@@ -1746,17 +1801,21 @@ input[type=radio] {
       margin-top: 0;
       border-top: 0;
       padding-top: 44px;
+
       &.is-open {
         padding-bottom: 0;
       }
 
-      .tabs__tab{
+      .tabs__tab {
         border-top: 1px solid #d9d8d4;
+
         &.is-active {
           border: 0;
         }
+
         &:hover {
           background-color: #0074bd;
+
           a {
             color: white;
           }
@@ -1778,6 +1837,7 @@ input[type=radio] {
   .form-item-label .machine-name-source {
     width: 100%;
   }
+
   .form-item-field-name .field-prefix {
     display: flex;
     width: 100%;
@@ -1803,15 +1863,14 @@ form#pathauto-pattern-list {
   }
 }
 
-#views-exposed-form-media-media-page-list {
-  
-}
+#views-exposed-form-media-media-page-list {}
+
 #edit-field-folder-target-id--wrapper {
   width: 100%;
   display: block;
   margin: 0.5em 0;
 
-  .form-checkboxes > ul > li {
+  .form-checkboxes>ul>li {
     display: inline-block;
     vertical-align: top;
     margin-right: 1em;
@@ -1822,7 +1881,7 @@ form#pathauto-pattern-list {
       margin-right: 0;
     }
 
-    > div {
+    >div {
       margin-right: 0;
     }
   }
@@ -1945,26 +2004,28 @@ form#pathauto-pattern-list {
     display: flex;
     flex-wrap: wrap;
 
-    > .layout__region {
+    >.layout__region {
       flex: 0 1 100%;
       box-sizing: border-box;
     }
 
     @include breakpoint(40em) {
-      > .layout__region--first-above,
-      > .layout__region--second-above,
-      > .layout__region--first-below,
-      > .layout__region--second-below {
+
+      >.layout__region--first-above,
+      >.layout__region--second-above,
+      >.layout__region--first-below,
+      >.layout__region--second-below {
         flex: 0 1 50%;
         max-width: 49%;
       }
 
-      > .layout__region--first-above,
-      > .layout__region--first-below {
+      >.layout__region--first-above,
+      >.layout__region--first-below {
         margin-right: 1%;
       }
-      > .layout__region--second-above,
-      > .layout__region--second-below {
+
+      >.layout__region--second-above,
+      >.layout__region--second-below {
         margin-left: 1%;
       }
     }
@@ -2000,5 +2061,18 @@ form#pathauto-pattern-list {
         flex: 0 1 calc(50% - 1em);
       }
     }
+  }
+}
+
+.layout-region-node-main {
+  width: 100%;
+  @include breakpoint(1200px) {
+    width: 75%;
+  }
+}
+.layout-region-node-secondary {
+  width: 100%;
+  @include breakpoint(1200px) {
+    width: 25%;
   }
 }

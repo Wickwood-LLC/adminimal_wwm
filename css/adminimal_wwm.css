@@ -274,17 +274,19 @@
   }
 }
 
-.adminimal .form-type-textfield, .adminimal .form-type-number, .adminimal .form-type-select, .adminimal .form-type-email, .adminimal .form-type-password, .adminimal .form-type-tel {
+.adminimal .form-type-textfield,
+.adminimal .form-type-number,
+.adminimal .form-type-select,
+.adminimal .form-type-email,
+.adminimal .form-type-password,
+.adminimal .form-type-tel {
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
 }
 
-.adminimal .form-type-textfield input, .adminimal .form-type-number input, .adminimal .form-type-select input, .adminimal .form-type-email input, .adminimal .form-type-password input, .adminimal .form-type-tel input {
-  flex: 1 1 calc(100% - var(--label-width));
-}
-
-.adminimal label, .adminimal .label {
+.adminimal label,
+.adminimal .label {
   margin: 0 0.2em 0.2em;
   display: inline-block;
 }
@@ -297,6 +299,7 @@
 .adminimal input.form-text {
   box-shadow: none;
   border-radius: 0;
+  width: 100%;
 }
 
 .adminimal input.form-tel {
@@ -413,7 +416,8 @@
           column-width: 200px;
 }
 
-.adminimal #user-form #edit-group-user .form-type-textfield label, .adminimal #user-form #edit-group-user .form-type-textfield .label,
+.adminimal #user-form #edit-group-user .form-type-textfield label,
+.adminimal #user-form #edit-group-user .form-type-textfield .label,
 .adminimal #user-form #edit-group-user .form-type-select label,
 .adminimal #user-form #edit-group-user .form-type-select .label,
 .adminimal #user-form #edit-group-user .form-type-email label,
@@ -444,7 +448,8 @@
   display: block;
 }
 
-.adminimal #user-form #edit-group-user-login-info .form-type-textfield label, .adminimal #user-form #edit-group-user-login-info .form-type-textfield .label,
+.adminimal #user-form #edit-group-user-login-info .form-type-textfield label,
+.adminimal #user-form #edit-group-user-login-info .form-type-textfield .label,
 .adminimal #user-form #edit-group-user-login-info .form-type-select label,
 .adminimal #user-form #edit-group-user-login-info .form-type-select .label,
 .adminimal #user-form #edit-group-user-login-info .form-type-email label,
@@ -464,17 +469,27 @@
   flex: 1 1 calc(100% - 122px - 2em);
 }
 
-.adminimal #user-form #edit-field-mailing-address-wrapper .address-line1,
-.adminimal #user-form #edit-field-mailing-address-wrapper .address-line2 {
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] .address-line1,
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] .address-line2 {
   flex: 100%;
 }
 
-.adminimal #user-form #edit-field-mailing-address-wrapper div[class*="address-administrative-area"],
-.adminimal #user-form #edit-field-mailing-address-wrapper div[class*="address-postal-code"] {
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-line1"] {
+  text-transform: capitalize;
+}
+
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-administrative-area"],
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-postal-code"] {
   display: inline-flex;
 }
 
-.adminimal #user-form #group-address div[class*="address-country-code"] label, .adminimal #user-form #group-address div[class*="address-country-code"] .label,
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-postal-code"] {
+  text-transform: capitalize;
+  width: 7em;
+}
+
+.adminimal #user-form #group-address div[class*="address-country-code"] label,
+.adminimal #user-form #group-address div[class*="address-country-code"] .label,
 .adminimal #user-form #group-address div[class*="address-locality"] label,
 .adminimal #user-form #group-address div[class*="address-locality"] .label,
 .adminimal #user-form #group-address div[class*="address-administrative-area"] label,
@@ -502,13 +517,21 @@
   min-width: unset;
 }
 
-.adminimal #user-form #group-phone div[class*="subform-field-phone-number"] label, .adminimal #user-form #group-phone div[class*="subform-field-phone-number"] .label,
+.adminimal #user-form #edit-group-phone-numbers .field--name-field-home-phone,
+.adminimal #user-form #edit-group-phone-numbers .field--name-field-cell-phone {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.adminimal #user-form #group-phone div[class*="subform-field-phone-number"] label,
+.adminimal #user-form #group-phone div[class*="subform-field-phone-number"] .label,
 .adminimal #user-form #group-phone div[class*="subform-field-phone-type"] label,
 .adminimal #user-form #group-phone div[class*="subform-field-phone-type"] .label {
   flex: 0 0 calc(103px + 0.4em);
 }
 
-.adminimal #user-form #edit-group-source .form-item-field-source label, .adminimal #user-form #edit-group-source .form-item-field-source .label,
+.adminimal #user-form #edit-group-source .form-item-field-source label,
+.adminimal #user-form #edit-group-source .form-item-field-source .label,
 .adminimal #user-form #edit-group-source .field--name-field-source-date label,
 .adminimal #user-form #edit-group-source .field--name-field-source-date .label {
   flex: 0 0 83px;
@@ -527,7 +550,8 @@
   align-items: baseline;
 }
 
-.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] label, .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] .label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] label,
+.adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] .label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-amount"] .label,
 .adminimal #user-form #edit-group-source div[class*="inline-entity-form-field-note-date-wrapper"] label,
@@ -1140,11 +1164,6 @@
   background-color: #f6f6f6;
 }
 
-.adminimal div[id*="add-more-wrapper"],
-.adminimal .seven-details__wrapper {
-  overflow-x: auto;
-}
-
 .adminimal .field-multiple-table .form-item {
   margin: 0.75em 0;
 }
@@ -1156,6 +1175,14 @@
 .adminimal .views-exposed-form .form--inline > .form-item {
   float: none;
   display: inline-block;
+}
+
+.adminimal table td {
+  padding: 0.5em;
+}
+
+.adminimal table .field-multiple-drag .handle {
+  margin: 0;
 }
 
 [dir="rtl"] .adminimal .is-horizontal .tabs__tab + .tabs__tab {
@@ -1784,6 +1811,26 @@ form#pathauto-pattern-list td:nth-child(2) {
 @media (min-width: 40em) {
   .layout.layout--threecol-section--25-50-25 > .layout__region--second {
     flex: 0 1 calc(50% - 1em);
+  }
+}
+
+.layout-region-node-main {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .layout-region-node-main {
+    width: 75%;
+  }
+}
+
+.layout-region-node-secondary {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .layout-region-node-secondary {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=adminimal_wwm.css.map */
