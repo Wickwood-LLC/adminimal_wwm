@@ -97,7 +97,9 @@
 }
 
 .adminimal .is-collapse-enabled .tabs__trigger {
+  font-size: 2em;
   border-radius: 0;
+  box-sizing: border-box;
 }
 
 .adminimal .is-collapse-enabled .tabs:before {
@@ -390,7 +392,6 @@
 .adminimal #user-form .form-type-password input,
 .adminimal #user-form .form-type-tel input,
 .adminimal #user-form .field--type-datetime input {
-  min-width: 195px;
   max-width: 100%;
 }
 

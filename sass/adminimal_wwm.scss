@@ -110,8 +110,9 @@
 
   .is-collapse-enabled {
     .tabs__trigger {
-
+      font-size: 2em;
       border-radius: 0;
+      box-sizing: border-box;
     }
 
     .tabs:before {
@@ -448,7 +449,6 @@
       align-items: baseline;
 
       input {
-        min-width: 195px;
         max-width: 100%;
       }
 
