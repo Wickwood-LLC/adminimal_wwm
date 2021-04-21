@@ -476,7 +476,7 @@
 
 .adminimal #user-form [id*="edit-field-mailing-address-wrapper"] .address-line1,
 .adminimal #user-form [id*="edit-field-mailing-address-wrapper"] .address-line2 {
-  flex: 100%;
+  flex: 100% !important;
 }
 
 .adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-line1"] {
@@ -1185,11 +1185,19 @@
   display: inline-block;
 }
 
-.adminimal table td {
+.adminimal table.field-multiple-table td {
   padding: 0.5em;
 }
 
-.adminimal table .field-multiple-drag .handle {
+.adminimal table.field-multiple-table .field-multiple-drag {
+  width: unset;
+}
+
+.adminimal table.field-multiple-table .field-multiple-drag .tabledrag-handle {
+  padding-right: 0;
+}
+
+.adminimal table.field-multiple-table .field-multiple-drag .handle {
   margin: 0;
 }
 

@@ -537,7 +537,7 @@
 
       .address-line1,
       .address-line2 {
-        flex: 100%;
+        flex: 100% !important;
       }
 
       div[class*="address-line1"] {
@@ -1322,12 +1322,19 @@
     }
   }
 
-  table {
+  table.field-multiple-table {
     td {
       padding: 0.5em;
     }
-    .field-multiple-drag .handle {
-      margin: 0;
+    .field-multiple-drag {
+      width: unset;
+      
+      .tabledrag-handle {
+        padding-right: 0;
+      }
+      .handle {
+        margin: 0;
+      }
     }
   }
 }
