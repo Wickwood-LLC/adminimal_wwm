@@ -544,7 +544,10 @@
 
       div[class*="address-postal-code"] {
         text-transform: capitalize;
-        width: 7em;
+
+        input {
+          width: 7em;
+        }
       }
     }
 
@@ -2074,5 +2077,48 @@ form#pathauto-pattern-list {
   width: 100%;
   @include breakpoint(1200px) {
     width: 25%;
+  }
+}
+
+/********************* Primary Tabs *********************/
+.primary-tabs {
+  &.is-collapse-enabled {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+
+    .tabs__trigger {
+      position: relative;
+      float: right;
+      margin: 0;
+      border-radius: 4px 0 0 4px;
+      color: black;
+      background: white;
+      padding: 10px;
+      border: 1px dotted rgba(40, 161, 204, 0.9);
+      border-right: 0;
+      box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 50%);
+      z-index: 50;
+      width: auto;
+      text-align: center;
+    }
+
+    .tabs.primary {
+      display: none;
+      padding: 0;
+      background-color: white;
+      border: 1px dotted rgba(40, 161, 204, 0.9);
+      border-radius: 4px 0 0 4px;
+      box-shadow: 0px 7px 7px rgba(0, 0, 0, 50%);
+
+      &.is-open {
+        display: block;
+      }
+
+      .tabs__tab.is-active {
+        position: relative;
+        border: unset;
+      }
+    }
   }
 }

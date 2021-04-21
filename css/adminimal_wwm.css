@@ -485,6 +485,9 @@
 
 .adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-postal-code"] {
   text-transform: capitalize;
+}
+
+.adminimal #user-form [id*="edit-field-mailing-address-wrapper"] div[class*="address-postal-code"] input {
   width: 7em;
 }
 
@@ -1832,5 +1835,46 @@ form#pathauto-pattern-list td:nth-child(2) {
   .layout-region-node-secondary {
     width: 25%;
   }
+}
+
+/********************* Primary Tabs *********************/
+.primary-tabs.is-collapse-enabled {
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.primary-tabs.is-collapse-enabled .tabs__trigger {
+  position: relative;
+  float: right;
+  margin: 0;
+  border-radius: 4px 0 0 4px;
+  color: black;
+  background: white;
+  padding: 10px;
+  border: 1px dotted rgba(40, 161, 204, 0.9);
+  border-right: 0;
+  box-shadow: 0px 2px 7px 1px black;
+  z-index: 50;
+  width: auto;
+  text-align: center;
+}
+
+.primary-tabs.is-collapse-enabled .tabs.primary {
+  display: none;
+  padding: 0;
+  background-color: white;
+  border: 1px dotted rgba(40, 161, 204, 0.9);
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0px 7px 7px black;
+}
+
+.primary-tabs.is-collapse-enabled .tabs.primary.is-open {
+  display: block;
+}
+
+.primary-tabs.is-collapse-enabled .tabs.primary .tabs__tab.is-active {
+  position: relative;
+  border: unset;
 }
 /*# sourceMappingURL=adminimal_wwm.css.map */
