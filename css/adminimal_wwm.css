@@ -1854,10 +1854,14 @@ form#pathauto-pattern-list td:nth-child(2) {
   padding: 10px;
   border: 1px dotted rgba(40, 161, 204, 0.9);
   border-right: 0;
-  box-shadow: 0px 2px 7px 1px black;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.5);
   z-index: 50;
   width: auto;
   text-align: center;
+}
+
+.primary-tabs.is-collapse-enabled .tabs__trigger:focus, .primary-tabs.is-collapse-enabled .tabs__trigger:hover {
+  background: white;
 }
 
 .primary-tabs.is-collapse-enabled .tabs.primary {
@@ -1866,7 +1870,7 @@ form#pathauto-pattern-list td:nth-child(2) {
   background-color: white;
   border: 1px dotted rgba(40, 161, 204, 0.9);
   border-radius: 4px 0 0 4px;
-  box-shadow: 0px 7px 7px black;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 }
 
 .primary-tabs.is-collapse-enabled .tabs.primary.is-open {
