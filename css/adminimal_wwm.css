@@ -285,10 +285,15 @@
   align-items: baseline;
 }
 
+.adminimal .form-type-password label {
+  width: 122px;
+}
+
 .adminimal label,
 .adminimal .label {
-  margin: 0 0.2em 0.2em;
+  margin: 0 0.5em 0.2em 0.2em;
   display: inline-block;
+  text-transform: capitalize;
 }
 
 .adminimal input.form-autocomplete {
