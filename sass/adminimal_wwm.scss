@@ -319,6 +319,11 @@
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
+
+    input {
+      flex: 1 1 calc(100% - var(--labelWidth));
+      min-width: 150px;
+    }
   }
 
   .form-type-password {
