@@ -2117,15 +2117,15 @@ form#pathauto-pattern-list {
       text-align: center;
 
       &:focus, &:hover {
-        background: white;
+        background: #eaeaea;
       }
     }
 
     .tabs.primary {
       display: none;
       padding: 0;
-      background-color: white;
-      border: 1px dotted rgba(40, 161, 204, 0.9);
+      background-color: #bbb;
+      border: 1px solid #bbb;
       border-radius: 4px 0 0 4px;
       box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 
@@ -2133,9 +2133,25 @@ form#pathauto-pattern-list {
         display: block;
       }
 
-      .tabs__tab.is-active {
-        position: relative;
-        border: unset;
+      .tabs__tab{
+        background: #eaeaea;
+
+        &:hover {
+          background: #bbb;
+        }
+        
+        &.is-active {
+          position: static;
+          border: unset;
+          width: 100%;
+          margin: 0;
+          background: white;
+        }
+
+        a {
+          background: unset;
+          font-weight: bold;
+        }
       }
     }
   }
