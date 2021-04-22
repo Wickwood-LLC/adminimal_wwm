@@ -310,6 +310,21 @@
     }
   }
 
+  input.form-autocomplete,
+  input.form-text,
+  input.form-tel,
+  input.form-email,
+  input.form-url,
+  input.form-search,
+  input.form-number,
+  input.form-color,
+  input.form-file,
+  input.form-date,
+  input.form-time,
+  textarea.form-textarea {
+    background: white;
+  }
+
   .form-type-textfield,
   .form-type-number,
   .form-type-select,
@@ -1331,12 +1346,14 @@
     td {
       padding: 0.5em;
     }
+
     .field-multiple-drag {
       width: unset;
-      
+
       .tabledrag-handle {
         padding-right: 0;
       }
+
       .handle {
         margin: 0;
       }
@@ -2088,18 +2105,21 @@ form#pathauto-pattern-list {
 
 .layout-region-node-main {
   width: 100%;
+
   @include breakpoint(1200px) {
     width: 75%;
   }
 }
+
 .layout-region-node-secondary {
   width: 100%;
+
   @include breakpoint(1200px) {
     width: 25%;
   }
 }
 
-/********************* Primary Tabs *********************/
+/********************* PRIMARY TABS *********************/
 .primary-tabs {
   &.is-collapse-enabled {
     position: fixed;
@@ -2121,7 +2141,8 @@ form#pathauto-pattern-list {
       width: auto;
       text-align: center;
 
-      &:focus, &:hover {
+      &:focus,
+      &:hover {
         background: #eaeaea;
       }
     }
@@ -2138,13 +2159,13 @@ form#pathauto-pattern-list {
         display: block;
       }
 
-      .tabs__tab{
+      .tabs__tab {
         background: #eaeaea;
 
         &:hover {
           background: #bbb;
         }
-        
+
         &.is-active {
           position: static;
           border: unset;
@@ -2160,4 +2181,10 @@ form#pathauto-pattern-list {
       }
     }
   }
+}
+
+/********************* BREADCRUMBS *********************/
+.breadcrumb {
+  font-weight: bold;
+  font-size: 1.1em;
 }
