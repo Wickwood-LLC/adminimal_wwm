@@ -377,6 +377,15 @@
   border-radius: 0;
 }
 
+@media (min-width: 1200px) {
+  .adminimal #edit-advanced.sticky-panel {
+    position: fixed;
+    margin-top: 1em;
+    margin-right: 1em;
+    transition: 0.5s;
+  }
+}
+
 .adminimal #user-form label[for] {
   display: inline-block;
 }

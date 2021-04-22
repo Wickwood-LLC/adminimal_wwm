@@ -434,6 +434,17 @@
     }
   }
 
+  #edit-advanced {
+    @include breakpoint(1200px) {
+      &.sticky-panel {
+        position: fixed;
+        margin-top: 1em;
+        margin-right: 1em;
+        transition: 0.5s;
+      }
+    }
+  }
+
   #user-form {
     label[for] {
       display: inline-block;
