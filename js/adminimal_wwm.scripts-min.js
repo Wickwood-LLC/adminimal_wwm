@@ -1,1 +1,0 @@
-!function(n,e){Drupal.behaviors.labelWidths={attach:function(e,t){function i(){n(".form-type-textfield, .form-type-number, .form-type-select, .form-type-email, .form-type-password").each(function(){var e=n(this).find("label").outerWidth(!0)+"px";n(this).find("input").css("--labelWidth",e)})}i(),n(window).on("resize mresize",i)}}}(jQuery);

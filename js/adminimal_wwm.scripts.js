@@ -1,6 +1,6 @@
 (function($, Drupal) {
   /**
-   * Toolbar Spacing
+   * Automatic Field width resizing
    */
   Drupal.behaviors.labelWidths = {
     attach: function(context, settings) {
@@ -12,7 +12,7 @@
       }
 
       labelWidths();
-      $(window).on("resize mresize", labelWidths);
+      $(window).on("resize mresize DOMSubtreeModified", labelWidths);
     }
   }; 
 
