@@ -1292,6 +1292,7 @@
   .adminimal select {
     border-radius: 0;
     background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
+    background-color: white;
   }
   .adminimal select:focus {
     background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
