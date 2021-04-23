@@ -27,15 +27,18 @@
       var windowTop;
       var currentPosition;
       var $panel;
+      var panelWidth
       var topSpacing;
 
       $panel = $('#edit-advanced');
 
-      delaySticky();
-      $(window).on("resize mresize", delaySticky);
+      sticky();
+      $(window).on("resize mresize", function(){
+        setTimeout(sticky, 500);
+      });
 
-      function delaySticky() {
-        setTimeout(function sticky() {
+      function sticky() {
+          panelWidth = $panel.width();
           topSpacing = ((isNaN($('.toolbar-fixed #toolbar-bar').height())) ? 0 : $('#toolbar-bar').height()) + ((isNaN($('.toolbar-tray-horizontal.is-active').height())) ? 0 : $('.toolbar-tray-horizontal.is-active').height());
           $panel.css({
             position: "static",
@@ -58,13 +61,16 @@
             $panel.css({
               top: topSpacing,
               position: "",
+              width: panelWidth,
             });
           } else {
             $panel.removeClass('sticky-panel');
-            $panel.css("top", "");
+            $panel.css({
+              top: "",
+              width: "unset",
+            });
           }
           // console.log("Top spacing is " + topSpacing);
-        }, 500);
       }
 
       $(window).scroll(function() { // scroll event 
@@ -83,10 +89,14 @@
           $panel.css({
             top: topSpacing,
             position: "",
+            width: panelWidth,
           });
         } else if (currentPosition >= 0) {
           $panel.removeClass('sticky-panel');
-          $panel.css("top", "");
+          $panel.css({
+            top: "",
+            width: "unset",
+          });
         }
         // console.log("Top spacing is " + topSpacing);
       });
