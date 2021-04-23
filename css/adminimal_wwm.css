@@ -286,7 +286,7 @@
 .adminimal input.form-date,
 .adminimal input.form-time,
 .adminimal textarea.form-textarea {
-  background: white;
+  background-color: white;
 }
 
 .adminimal .form-type-textfield,
