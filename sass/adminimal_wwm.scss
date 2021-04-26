@@ -320,7 +320,7 @@
   input.form-color,
   input.form-file,
   input.form-date,
-  input.form-time,
+  input.form-time,f
   textarea.form-textarea {
     background-color: white;
   }
@@ -708,6 +708,10 @@
       .form-item {
         margin-right: 1em;
         flex: 0 0 143px;
+
+        &.form-type-textfield {
+          display: inline-block;
+        }
       }
     }
 

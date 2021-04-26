@@ -284,8 +284,8 @@
 .adminimal input.form-color,
 .adminimal input.form-file,
 .adminimal input.form-date,
-.adminimal input.form-time,
-.adminimal textarea.form-textarea {
+.adminimal input.form-time, .adminimal f
+textarea.form-textarea {
   background-color: white;
 }
 
@@ -639,6 +639,10 @@
 .adminimal #user-form #edit-roles .form-item {
   margin-right: 1em;
   flex: 0 0 143px;
+}
+
+.adminimal #user-form #edit-roles .form-item.form-type-textfield {
+  display: inline-block;
 }
 
 .adminimal #user-form .field--name-user-picture .image-widget {
