@@ -21,86 +21,86 @@
   /**
    * Sticky panel
    */
-  Drupal.behaviors.stickyPanel = {
-    attach: function(context, settings) {
-      var stickyTop;
-      var windowTop;
-      var currentPosition;
-      var $panel;
-      var panelWidth
-      var topSpacing;
+  // Drupal.behaviors.stickyPanel = {
+  //   attach: function(context, settings) {
+  //     var stickyTop;
+  //     var windowTop;
+  //     var currentPosition;
+  //     var $panel;
+  //     var panelWidth
+  //     var topSpacing;
 
-      $panel = $('#edit-advanced');
+  //     $panel = $('#edit-advanced');
 
-      sticky();
-      $(window).on("resize mresize", function(){
-        setTimeout(sticky, 500);
-      });
+  //     sticky();
+  //     $(window).on("resize mresize", function(){
+  //       setTimeout(sticky, 500);
+  //     });
 
-      function sticky() {
-          panelWidth = $panel.width();
-          topSpacing = ((isNaN($('.toolbar-fixed #toolbar-bar').height())) ? 0 : $('#toolbar-bar').height()) + ((isNaN($('.toolbar-tray-horizontal.is-active').height())) ? 0 : $('.toolbar-tray-horizontal.is-active').height());
-          $panel.css({
-            position: "static",
-          });
+  //     function sticky() {
+  //         panelWidth = $panel.width();
+  //         topSpacing = ((isNaN($('.toolbar-fixed #toolbar-bar').height())) ? 0 : $('#toolbar-bar').height()) + ((isNaN($('.toolbar-tray-horizontal.is-active').height())) ? 0 : $('.toolbar-tray-horizontal.is-active').height());
+  //         $panel.css({
+  //           position: "static",
+  //         });
 
-          stickyTop = $panel.offset().top; // tells how far our target element is from the top of the page
-          windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
-          currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+  //         stickyTop = $panel.offset().top; // tells how far our target element is from the top of the page
+  //         windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
+  //         currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
 
-          // console.log('Distance from top of page: ' + stickyTop);
-          // console.log('Position on load ' + currentPosition);
+  //         // console.log('Distance from top of page: ' + stickyTop);
+  //         // console.log('Position on load ' + currentPosition);
 
-          if ((window.matchMedia("(orientation: landscape)").matches) && (($(window).height() < 547))) {
-            $(".header-container").css("height", "unset");
-            return;
-          }
+  //         if ((window.matchMedia("(orientation: landscape)").matches) && (($(window).height() < 547))) {
+  //           $(".header-container").css("height", "unset");
+  //           return;
+  //         }
 
-          if (currentPosition < 0) { // if target element goes above the screen
-            $panel.not('sticky-panel').addClass('sticky-panel');
-            $panel.css({
-              top: topSpacing,
-              position: "",
-              width: panelWidth,
-            });
-          } else {
-            $panel.removeClass('sticky-panel');
-            $panel.css({
-              top: "",
-              width: "unset",
-            });
-          }
-          // console.log("Top spacing is " + topSpacing);
-      }
+  //         if (currentPosition < 0) { // if target element goes above the screen
+  //           $panel.not('sticky-panel').addClass('sticky-panel');
+  //           $panel.css({
+  //             top: topSpacing,
+  //             position: "",
+  //             width: panelWidth,
+  //           });
+  //         } else {
+  //           $panel.removeClass('sticky-panel');
+  //           $panel.css({
+  //             top: "",
+  //             width: "unset",
+  //           });
+  //         }
+  //         // console.log("Top spacing is " + topSpacing);
+  //     }
 
-      $(window).scroll(function() { // scroll event 
-        if ((window.matchMedia("(orientation: landscape)").matches) && (($(window).height() < 547))) {
-          return;
-        }
+  //     $(window).scroll(function() { // scroll event 
+  //       if ((window.matchMedia("(orientation: landscape)").matches) && (($(window).height() < 547))) {
+  //         return;
+  //       }
 
-        windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
-        currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+  //       windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
+  //       currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
 
-        // console.log('Distance from top of page: ' + stickyTop);
-        // console.log('Current position: ' + currentPosition);
+  //       // console.log('Distance from top of page: ' + stickyTop);
+  //       // console.log('Current position: ' + currentPosition);
 
-        if (currentPosition < 0) { // if target element goes above the screen
-          $panel.not('sticky-panel').addClass('sticky-panel');
-          $panel.css({
-            top: topSpacing,
-            position: "",
-            width: panelWidth,
-          });
-        } else if (currentPosition >= 0) {
-          $panel.removeClass('sticky-panel');
-          $panel.css({
-            top: "",
-            width: "unset",
-          });
-        }
-        // console.log("Top spacing is " + topSpacing);
-      });
-    }
-  }; 
+  //       if (currentPosition < 0) { // if target element goes above the screen
+  //         $panel.not('sticky-panel').addClass('sticky-panel');
+  //         $panel.css({
+  //           top: topSpacing,
+  //           position: "",
+  //           width: panelWidth,
+  //         });
+  //       } else if (currentPosition >= 0) {
+  //         $panel.removeClass('sticky-panel');
+  //         $panel.css({
+  //           top: "",
+  //           width: "unset",
+  //         });
+  //       }
+  //       // console.log("Top spacing is " + topSpacing);
+  //     });
+  //   }
+  // }; 
 
 })(jQuery, Drupal);
