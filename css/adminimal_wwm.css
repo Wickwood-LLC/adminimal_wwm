@@ -1871,21 +1871,23 @@ form#pathauto-pattern-list td:nth-child(2) {
 
 .layout-region-node-main {
   width: 100%;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
   .layout-region-node-main {
-    width: 75%;
+    width: 100%;
   }
 }
 
 .layout-region-node-secondary {
   width: 100%;
+  padding: 0 0.5em;
 }
 
 @media (min-width: 1200px) {
   .layout-region-node-secondary {
-    width: 25%;
+    width: 100%;
   }
 }
 
