@@ -274,6 +274,11 @@
   }
 }
 
+.adminimal input[type=number]::-webkit-inner-spin-button,
+.adminimal input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
 .adminimal input.form-autocomplete,
 .adminimal input.form-text,
 .adminimal input.form-tel,
@@ -1237,6 +1242,10 @@ textarea.form-textarea {
 
 .adminimal table.field-multiple-table .field-multiple-drag .handle {
   margin: 0;
+}
+
+.adminimal .layout-region-node-footer__content {
+  border-top: none;
 }
 
 [dir="rtl"] .adminimal .is-horizontal .tabs__tab + .tabs__tab {

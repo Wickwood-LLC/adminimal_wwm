@@ -310,6 +310,11 @@
     }
   }
 
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+     opacity: 1;
+  }
+
   input.form-autocomplete,
   input.form-text,
   input.form-tel,
@@ -1373,6 +1378,10 @@
         margin: 0;
       }
     }
+  }
+
+  .layout-region-node-footer__content {
+    border-top: none;
   }
 }
 
