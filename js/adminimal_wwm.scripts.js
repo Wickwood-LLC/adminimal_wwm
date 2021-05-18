@@ -12,7 +12,7 @@
       }
 
       labelWidths();
-      $(window).on("resize mresize DOMSubtreeModified", function(){
+      $(window).on("resize mresize", function(){
         setTimeout(labelWidths, 10);
       });
     }
