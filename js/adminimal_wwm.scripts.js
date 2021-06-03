@@ -11,10 +11,10 @@
         });
       }
 
-      labelWidths();
-      $(window).on("resize mresize", function(){
-        setTimeout(labelWidths, 10);
+      $(window).on("load resize mresize", function(){
+        labelWidths;
       });
+      setTimeout(labelWidths, 10000);
     }
   };
 
