@@ -14,7 +14,8 @@
       $(window).on("load resize mresize", function(){
         labelWidths;
       });
-      setTimeout(labelWidths, 10000);
+      setInterval(labelWidths, 1000);
+      clearInterval(10000);
     }
   };
 
