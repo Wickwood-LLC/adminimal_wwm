@@ -16,6 +16,13 @@ custom-styling:
     theme:
       public://adminimal-custom.css: {}
 
+# Entity browser custom CSS
+entity-browser-custom:
+  version: VERSION
+  css:
+    theme:
+      /css/entity-browser.css: {}
+
 global-scripts:
   version: VERSION
   js:

@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.idea": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/.idea",
+		"oF": 0
+		},
 	"/adminimal_wwm.info.yml": {
 		"cB": 0,
 		"ft": 8192,
@@ -790,6 +796,19 @@
 		"oAP": "/sass/ckeditor-styles.css",
 		"oF": 0,
 		"oS": 0,
+		"uL": 1
+		},
+	"/sass/entity-browser.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/css/entity-browser.css",
+		"oF": 2,
+		"oS": 1,
 		"uL": 1
 		},
 	"/screenshot.png": {
