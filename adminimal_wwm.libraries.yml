@@ -17,7 +17,7 @@ custom-styling:
       public://adminimal-custom.css: {}
 
 # Entity browser custom CSS
-entity-browser-custom:
+media-entity-browser-custom:
   version: VERSION
   css:
     theme:

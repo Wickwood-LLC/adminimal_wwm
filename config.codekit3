@@ -689,11 +689,38 @@
 		"oAP": "/css/ckeditor-styles.css.map",
 		"oF": 0
 		},
+	"/css/media-entity-browser.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/media-entity-browser-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/media-entity-browser.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/css/media-entity-browser.css.map",
+		"oF": 0
+		},
 	"/images/caret-down.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/caret-down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/check.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -724,6 +751,36 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/chevron-disc-up.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/image.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/image.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/video.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/video.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -798,7 +855,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/sass/entity-browser.scss": {
+	"/sass/media-entity-browser.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -806,7 +863,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/css/entity-browser.css",
+		"oAP": "/css/media-entity-browser.css",
 		"oF": 2,
 		"oS": 1,
 		"uL": 1
