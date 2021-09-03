@@ -4,10 +4,8 @@
  * @file
  * Functions to support theming in the Adminimal theme.
  */
-
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
-
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  */
@@ -56,14 +54,14 @@ function adminimal_wwm_form_system_theme_settings_alter(&$form, \Drupal\Core\For
     }
     // Else create a new blank css file.
     else {
-      file_unmanaged_save_data("", $custom_css_path, FILE_EXISTS_ERROR);
+      \Drupal::service('file_system')->saveData("", $custom_css_path, FILE_EXISTS_ERROR);
     }
 
   }
 
   // Notify user to remove his old css file.
   if (file_exists($old_css_path)) {
-    drupal_set_message(t('Please delete the old @css_location file, as its no longer used.', ['@css_location file' => $old_css_path]), 'warning');
+    \Drupal::messenger()->addWarning(t('Please delete the old @css_location file, as its no longer used.', ['@css_location file' => $old_css_path]));
   }
 
   $form['adminimal_custom'] = [
