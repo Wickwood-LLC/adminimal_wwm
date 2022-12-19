@@ -294,6 +294,10 @@
 		}
 	}
 
+	:has(> table) {
+		overflow: auto;
+	}
+
 	select {
 		min-height: 28px;
 		text-shadow: none;

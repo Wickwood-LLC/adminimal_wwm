@@ -219,6 +219,9 @@
 .adminimal .button--danger:hover {
   text-decoration: underline;
 }
+.adminimal :has(> table) {
+  overflow: auto;
+}
 .adminimal select {
   min-height: 28px;
   text-shadow: none;
