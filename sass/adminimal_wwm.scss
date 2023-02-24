@@ -66,13 +66,13 @@
 			}
 		}
 
-		> tr {
+		>tr {
 			border-bottom: 1px solid #e6e4df;
 		}
 	}
 
 	th {
-		> a {
+		>a {
 			&:hover {
 				text-decoration: underline;
 			}
@@ -82,7 +82,7 @@
 			}
 		}
 
-		&.is-active > a {
+		&.is-active>a {
 			color: #333;
 
 			&:hover {
@@ -131,7 +131,7 @@
 				margin-right: 0;
 			}
 
-			+ .tabs__tab {
+			+.tabs__tab {
 				border-radius: 0;
 				border: none;
 				margin-left: 0;
@@ -489,6 +489,7 @@
 		}
 
 		#edit-group-full-name {
+
 			.field--name-field-prefix,
 			.field--name-field-suffix {
 				display: inline-block;
@@ -500,10 +501,12 @@
 		}
 
 		#edit-group-user {
+
 			.form-type-textfield,
 			.form-type-select,
 			.form-type-email,
 			.field--type-datetime {
+
 				label,
 				.label {
 					flex: 0 0 calc(91px + 0.4em);
@@ -534,11 +537,13 @@
 		}
 
 		#edit-group-user-login-info {
+
 			.form-type-textfield,
 			.form-type-select,
 			.form-type-email,
 			.form-type-password,
 			.field--type-datetime {
+
 				label,
 				.label {
 					flex: 0 0 calc(122px + 0.4em);
@@ -551,6 +556,7 @@
 		}
 
 		[id*="edit-field-mailing-address-wrapper"] {
+
 			.address-line1,
 			.address-line2 {
 				flex: 100% !important;
@@ -575,10 +581,12 @@
 		}
 
 		#group-address {
+
 			div[class*="address-country-code"],
 			div[class*="address-locality"],
 			div[class*="address-administrative-area"],
 			div[class*="address-postal-code"] {
+
 				label,
 				.label {
 					flex: 0 0 calc(60px + 0.4em);
@@ -612,8 +620,10 @@
 		}
 
 		#group-phone {
+
 			div[class*="subform-field-phone-number"],
 			div[class*="subform-field-phone-type"] {
+
 				label,
 				.label {
 					flex: 0 0 calc(103px + 0.4em);
@@ -622,8 +632,10 @@
 		}
 
 		#edit-group-source {
+
 			.form-item-field-source,
 			.field--name-field-source-date {
+
 				label,
 				.label {
 					flex: 0 0 83px;
@@ -664,7 +676,7 @@
 			flex-flow: row wrap;
 			align-items: start;
 
-			> div {
+			>div {
 				flex: 1 1 0;
 				padding: 0 0.5em;
 				min-width: 250px;
@@ -741,8 +753,7 @@
 			text-align: center;
 		}
 
-		.tabledrag-toggle-weight {
-		}
+		.tabledrag-toggle-weight {}
 	}
 
 	.toolbar {
@@ -802,7 +813,7 @@
 			box-shadow: none;
 
 			.toolbar-tab {
-				&:not(.workspaces-toolbar-tab) > .toolbar-item {
+				&:not(.workspaces-toolbar-tab)>.toolbar-item {
 					color: #bebebe;
 					font-weight: 600;
 
@@ -814,7 +825,7 @@
 					}
 				}
 
-				> .toolbar-item {
+				>.toolbar-item {
 					&.is-active {
 						background-image: none;
 						background-color: #333;
@@ -883,7 +894,7 @@
 
 			box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.85);
 
-			.menu-item--active-trail > .toolbar-box a {
+			.menu-item--active-trail>.toolbar-box a {
 				color: #bbb;
 				font-weight: 500;
 				text-decoration: none;
@@ -900,7 +911,7 @@
 			background-color: #333;
 		}
 
-		.menu-item + .menu-item {
+		.menu-item+.menu-item {
 			border: 0 none;
 		}
 
@@ -1132,8 +1143,7 @@
 		border-bottom: 1px solid transparent;
 	}
 
-	nav.is-horizontal.is-collapsible.position-container.is-horizontal-enabled
-		ul.tabs.primary {
+	nav.is-horizontal.is-collapsible.position-container.is-horizontal-enabled ul.tabs.primary {
 		background: #ebebeb;
 		margin-left: -2.1rem;
 		margin-right: -2.1rem;
@@ -1256,7 +1266,7 @@
 			border-right: none;
 		}
 
-		+ .menu-item {
+		+.menu-item {
 			border-left: none;
 			border-right: none;
 		}
@@ -1320,7 +1330,7 @@
 	}
 
 	.views-exposed-form {
-		.form--inline > .form-item {
+		.form--inline>.form-item {
 			float: none;
 			display: inline-block;
 		}
@@ -1352,7 +1362,7 @@
 [dir="rtl"] {
 	.adminimal {
 		.is-horizontal {
-			.tabs__tab + .tabs__tab {
+			.tabs__tab+.tabs__tab {
 				border-radius: 0;
 				border: none;
 				margin-left: 0;
@@ -1398,7 +1408,7 @@
 			border-top-right-radius: 0;
 		}
 
-		&.toolbar-horizontal .toolbar-tray .menu-item + .menu-item {
+		&.toolbar-horizontal .toolbar-tray .menu-item+.menu-item {
 			border-left: none;
 			border-right: none;
 		}
@@ -1600,19 +1610,15 @@ input[type="radio"] {
 }
 
 @supports (-webkit-appearance: none) {
-	input[type="radio"] {
-	}
+	input[type="radio"] {}
 
-	input[type="checkbox"]#edit-delete {
-	}
+	input[type="checkbox"]#edit-delete {}
 }
 
 @supports (-moz-appearance: none) {
-	input[type="radio"] {
-	}
+	input[type="radio"] {}
 
-	input[type="checkbox"]#edit-delete {
-	}
+	input[type="checkbox"]#edit-delete {}
 }
 
 .node-preview-container {
@@ -1627,7 +1633,7 @@ input[type="radio"] {
 
 .js .adminimal {
 	.form-actions {
-		.dropbutton .dropbutton-action > * {
+		.dropbutton .dropbutton-action>* {
 			text-shadow: none;
 
 			border-radius: 0;
@@ -1873,15 +1879,14 @@ form#pathauto-pattern-list {
 	}
 }
 
-#views-exposed-form-media-media-page-list {
-}
+#views-exposed-form-media-media-page-list {}
 
 #edit-field-folder-target-id--wrapper {
 	width: 100%;
 	display: block;
 	margin: 0.5em 0;
 
-	.form-checkboxes > ul > li {
+	.form-checkboxes>ul>li {
 		display: inline-block;
 		vertical-align: top;
 		margin-right: 1em;
@@ -1892,7 +1897,7 @@ form#pathauto-pattern-list {
 			margin-right: 0;
 		}
 
-		> div {
+		>div {
 			margin-right: 0;
 		}
 	}
@@ -1936,7 +1941,7 @@ form#pathauto-pattern-list {
 	}
 
 	&.layout--twocol-section--50-50 {
-		> .layout__region {
+		>.layout__region {
 			@include breakpoint(40em) {
 				flex: 1 1 100%;
 			}
@@ -1954,18 +1959,18 @@ form#pathauto-pattern-list {
 			flex-flow: row nowrap;
 		}
 
-		> .layout__region--first,
-		> .layout__region--second {
+		>.layout__region--first,
+		>.layout__region--second {
 			flex: 1 1 100%;
 		}
 
-		> .layout__region--first {
+		>.layout__region--first {
 			@include breakpoint(900px) {
 				flex: 0 1 75%;
 			}
 		}
 
-		> .layout__region--second {
+		>.layout__region--second {
 			@include breakpoint(900px) {
 				flex: 0 1 25%;
 			}
@@ -1979,12 +1984,12 @@ form#pathauto-pattern-list {
 			flex-flow: row nowrap;
 		}
 
-		> .layout__region--first {
+		>.layout__region--first {
 			margin-bottom: 1em;
 		}
 
-		> .layout__region--first,
-		> .layout__region--second {
+		>.layout__region--first,
+		>.layout__region--second {
 			flex: 1 1 100%;
 
 			@include breakpoint(40em) {
@@ -1997,14 +2002,14 @@ form#pathauto-pattern-list {
 			}
 		}
 
-		> .layout__region--first {
+		>.layout__region--first {
 			@include breakpoint(740px) {
 				margin-left: 0;
 				margin-bottom: 0;
 			}
 		}
 
-		> .layout__region--second {
+		>.layout__region--second {
 			@include breakpoint(740px) {
 				margin-right: 0;
 			}
@@ -2015,41 +2020,43 @@ form#pathauto-pattern-list {
 		display: flex;
 		flex-wrap: wrap;
 
-		> .layout__region {
+		>.layout__region {
 			flex: 0 1 100%;
 			box-sizing: border-box;
 		}
 
 		@include breakpoint(40em) {
-			> .layout__region--first-above,
-			> .layout__region--second-above,
-			> .layout__region--first-below,
-			> .layout__region--second-below {
+
+			>.layout__region--first-above,
+			>.layout__region--second-above,
+			>.layout__region--first-below,
+			>.layout__region--second-below {
 				flex: 0 1 50%;
 				max-width: 49%;
 			}
 
-			> .layout__region--first-above,
-			> .layout__region--first-below {
+			>.layout__region--first-above,
+			>.layout__region--first-below {
 				margin-right: 1%;
 			}
 
-			> .layout__region--second-above,
-			> .layout__region--second-below {
+			>.layout__region--second-above,
+			>.layout__region--second-below {
 				margin-left: 1%;
 			}
 		}
 	}
 
 	&.layout--threecol-section--33-34-33 {
-		> .layout__region--first,
-		> .layout__region--third {
+
+		>.layout__region--first,
+		>.layout__region--third {
 			@include breakpoint(40em) {
 				flex: 0 1 calc(33% - 0.5em);
 			}
 		}
 
-		> .layout__region--second {
+		>.layout__region--second {
 			@include breakpoint(40em) {
 				flex: 0 1 calc(34% - 1em);
 			}
@@ -2057,14 +2064,15 @@ form#pathauto-pattern-list {
 	}
 
 	&.layout--threecol-section--25-50-25 {
-		> .layout__region--first,
-		> .layout__region--third {
+
+		>.layout__region--first,
+		>.layout__region--third {
 			@include breakpoint(40em) {
 				flex: 0 1 calc(25% - 0.5em);
 			}
 		}
 
-		> .layout__region--second {
+		>.layout__region--second {
 			@include breakpoint(40em) {
 				flex: 0 1 calc(50% - 1em);
 			}
