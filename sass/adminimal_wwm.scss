@@ -22,6 +22,8 @@
 @import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 .adminimal {
+	overflow-x: hidden;
+
 	.page-title {
 		color: #fff;
 		font-size: 2.35em;
@@ -1421,7 +1423,7 @@
 	}
 }
 
-@media screen and(-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
 	.adminimal select {
 		border-radius: 0;
 		background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
