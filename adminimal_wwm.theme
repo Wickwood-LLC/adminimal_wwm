@@ -4,19 +4,17 @@
  * @file
  * Functions to support theming in the Adminimal theme.
  */
-
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
-
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  */
-function adminimal_wwm_preprocess_html(&$variables)
-{
+function adminimal_wwm_preprocess_html(&$variables) {
   // Add adminimal class to the body.
   if ($variables['attributes'] instanceof Attribute) {
     $variables['attributes']->addClass('adminimal');
-  } else {
+  }
+  else {
     $variables['attributes']['class'][] = 'adminimal';
   }
 
@@ -33,8 +31,7 @@ function adminimal_wwm_preprocess_html(&$variables)
 /**
  * Implements hook_form_system_theme_settings_alter().
  */
-function adminimal_wwm_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL)
-{
+function adminimal_wwm_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -59,6 +56,7 @@ function adminimal_wwm_form_system_theme_settings_alter(&$form, \Drupal\Core\For
     else {
       \Drupal::service('file_system')->saveData("", $custom_css_path, FILE_EXISTS_ERROR);
     }
+
   }
 
   // Notify user to remove his old css file.
@@ -101,7 +99,8 @@ function adminimal_wwm_form_system_theme_settings_alter(&$form, \Drupal\Core\For
         '#markup' => t('Custom CSS file Found in: @css', ['@css' => $custom_css_dir]),
       ],
     ];
-  } else {
+  }
+  else {
     $form['adminimal_custom']['adminimal_custom_check']['custom_css_not_found'] = [
       '#type' => 'container',
       '#attributes' => [
@@ -125,12 +124,4 @@ function adminimal_wwm_form_system_theme_settings_alter(&$form, \Drupal\Core\For
     '#default_value' => theme_get_setting('disable_google_fonts'),
     '#description' => t('Useful for languages that are not well supported by the "Open sans" font. Like Japanese for example.'),
   ];
-}
-
-/**
- * Implements hook_preprocess_table().
- */
-function adminimal_wwm_preprocess_table(&$variables)
-{
-  $variables['table'] = '<div class="responsive-table">' . $variables['table'] . '</div>';
 }
