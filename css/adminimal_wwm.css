@@ -25,6 +25,9 @@
   line-height: 1.2em;
   margin-bottom: 1rem;
 }
+.adminimal .responsive-table {
+  overflow-x: scroll;
+}
 .adminimal .heading-a {
   color: #fff;
   font-size: 2.35em;
