@@ -34,6 +34,26 @@
 
 	.responsive-table {
 		overflow-x: scroll;
+
+		.table-filter {
+			position: sticky;
+			left: 0;
+		}
+	}
+
+	table.permissions {
+
+
+		tr>:is(th, td):first-child {
+			position: sticky;
+			left: 0;
+			z-index: 1;
+			box-shadow: inset -10px 0px 4px -10px rgba(0, 0, 0, 0.5);
+		}
+
+		tr>td:first-child {
+			background-color: white;
+		}
 	}
 
 	.heading-a {
