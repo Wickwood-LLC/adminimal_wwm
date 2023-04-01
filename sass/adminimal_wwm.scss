@@ -33,7 +33,8 @@
 	}
 
 	.responsive-table {
-		overflow-x: scroll;
+		overflow-x: auto;
+		width: 100%;
 
 		.table-filter {
 			position: sticky;

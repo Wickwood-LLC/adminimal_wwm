@@ -26,7 +26,8 @@
   margin-bottom: 1rem;
 }
 .adminimal .responsive-table {
-  overflow-x: scroll;
+  overflow-x: auto;
+  width: 100%;
 }
 .adminimal .responsive-table .table-filter {
   position: sticky;
