@@ -1942,7 +1942,7 @@ form#pathauto-pattern-list {
 	justify-content: space-between;
 
 	.layout__region {
-		padding: 0.5em 0;
+		padding: 0;
 		margin: 0;
 
 		&:first-child {
@@ -1954,7 +1954,7 @@ form#pathauto-pattern-list {
 		}
 
 		@include breakpoint(740px) {
-			padding: 0 0.5em;
+			padding: 0;
 			margin: 0;
 
 			&:first-child {
@@ -2193,4 +2193,19 @@ form#pathauto-pattern-list {
 .breadcrumb {
 	font-weight: bold;
 	font-size: 1.1em;
+}
+
+.boxed {
+    border: 1px solid #c0c0c0;
+    margin: 1em 0;
+    padding: 12px 18px 18px;
+    border-radius: 2px;
+    background-color: #fcfcfa;
+
+	> h2 {
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 0;
+	}
 }
