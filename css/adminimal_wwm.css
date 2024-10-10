@@ -28,10 +28,24 @@
 .adminimal .responsive-table {
   overflow-x: auto;
   width: 100%;
+  border: 1px solid #c0c0c0;
+  margin: 1em 0;
+  background-color: #f5f5f2;
+}
+.adminimal .responsive-table .tabledrag-toggle-weight-wrapper {
+  border-bottom: 0;
+  padding: 0 0.5em;
 }
 .adminimal .responsive-table .table-filter {
   position: sticky;
   left: 0;
+}
+.adminimal .responsive-table table {
+  border: 0;
+  background-color: white;
+}
+.adminimal .responsive-table table.field-multiple-table {
+  margin-bottom: 0;
 }
 .adminimal table.permissions tr > :is(th, td):first-child {
   position: sticky;
@@ -374,31 +388,48 @@
   content: ": ";
   display: inline;
 }
-.adminimal #user-form .form-type-textfield,
-.adminimal #user-form .form-type-select,
-.adminimal #user-form .form-type-email,
-.adminimal #user-form .form-type-password,
-.adminimal #user-form .form-type-tel,
-.adminimal #user-form .field--type-datetime {
+.adminimal #user-form :is(.form-type-textfield,
+.form-type-select,
+.form-type-email,
+.form-type-password,
+.form-type-tel,
+.field--type-datetime) {
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
 }
-.adminimal #user-form .form-type-textfield input,
-.adminimal #user-form .form-type-select input,
-.adminimal #user-form .form-type-email input,
-.adminimal #user-form .form-type-password input,
-.adminimal #user-form .form-type-tel input,
-.adminimal #user-form .field--type-datetime input {
+.adminimal #user-form :is(.form-type-textfield,
+.form-type-select,
+.form-type-email,
+.form-type-password,
+.form-type-tel,
+.field--type-datetime) input {
   max-width: 100%;
 }
-.adminimal #user-form .form-type-textfield .description,
-.adminimal #user-form .form-type-select .description,
-.adminimal #user-form .form-type-email .description,
-.adminimal #user-form .form-type-password .description,
-.adminimal #user-form .form-type-tel .description,
-.adminimal #user-form .field--type-datetime .description {
+.adminimal #user-form :is(.form-type-textfield,
+.form-type-select,
+.form-type-email,
+.form-type-password,
+.form-type-tel,
+.field--type-datetime) .description {
   flex: 1 100%;
+}
+.adminimal #user-form :is(.form-type-textfield,
+.form-type-select,
+.form-type-email,
+.form-type-password,
+.form-type-tel,
+.field--type-datetime) .chosen-container {
+  flex: 1;
+  min-width: 0;
+}
+.adminimal #user-form #edit-account {
+  -moz-column-count: auto;
+       column-count: auto;
+  -moz-column-width: 20rem;
+       column-width: 20rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 .adminimal #user-form #edit-group-full-name .field--name-field-prefix,
 .adminimal #user-form #edit-group-full-name .field--name-field-suffix {
@@ -557,15 +588,18 @@
   margin-right: 2em;
 }
 .adminimal #user-form #edit-roles {
-  display: flex;
-  flex-flow: row wrap;
+  -moz-column-width: 150px;
+       column-width: 150px;
 }
 .adminimal #user-form #edit-roles .form-item {
-  margin-right: 1em;
-  flex: 0 0 143px;
+  margin: 0;
+  display: flex;
 }
 .adminimal #user-form #edit-roles .form-item.form-type-textfield {
   display: inline-block;
+}
+.adminimal #user-form #edit-roles .form-item input {
+  flex: 0 0 auto;
 }
 .adminimal #user-form .field--name-user-picture .image-widget {
   display: flex;
@@ -605,6 +639,13 @@
 }
 .adminimal #user-form .paragraphs-add-wrapper {
   text-align: center;
+}
+.adminimal #user-form :is(.form-radios, .form-checkboxes) {
+  -moz-column-width: 150px;
+       column-width: 150px;
+}
+.adminimal #user-form :is(.form-radios, .form-checkboxes) .form-item {
+  margin: 0;
 }
 .adminimal .toolbar .toolbar-tray-vertical {
   border: none;
@@ -1015,9 +1056,6 @@
 .adminimal .views-ui-dialog .views-override {
   background-color: #f6f6f6;
 }
-.adminimal .field-multiple-table .form-item {
-  margin: 0.75em 0;
-}
 .adminimal .media-library-item__remove.button {
   border-radius: 20px;
 }
@@ -1025,17 +1063,24 @@
   float: none;
   display: inline-block;
 }
+.adminimal table.field-multiple-table {
+  border-top: 0;
+}
 .adminimal table.field-multiple-table td {
   padding: 0.5em;
 }
 .adminimal table.field-multiple-table .field-multiple-drag {
   width: unset;
+  align-content: center;
 }
 .adminimal table.field-multiple-table .field-multiple-drag .tabledrag-handle {
   padding-right: 0;
 }
 .adminimal table.field-multiple-table .field-multiple-drag .handle {
   margin: 0;
+}
+.adminimal table.field-multiple-table .form-item {
+  margin: 0.75em 0;
 }
 .adminimal .layout-region-node-footer__content {
   border-top: none;
@@ -1672,4 +1717,28 @@ form#pathauto-pattern-list td:nth-child(2) {
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
+}
+
+.paragraph-type-title {
+  visibility: hidden;
+}
+
+.paragraphs-dropbutton-wrapper input[id*=remove-button] {
+  background-color: red;
+  color: white;
+}
+.paragraphs-dropbutton-wrapper input[id*=remove-button]:hover {
+  background-color: #ff6666;
+  background-image: none;
+}
+
+.paragraphs-subform .field--name-field-address details {
+  background-color: unset;
+  border: unset;
+}
+.paragraphs-subform .field--name-field-address summary {
+  display: none;
+}
+.paragraphs-subform .field--name-field-address .details-wrapper {
+  padding: 0;
 }/*# sourceMappingURL=adminimal_wwm.css.map */
