@@ -52,10 +52,7 @@
     table {
       border: 0;
       background-color: white;
-
-      &.field-multiple-table {
-        margin-bottom: 0;
-      }
+      margin-bottom: 0;
     }
   }
 
@@ -365,22 +362,22 @@
   input.form-file,
   input.form-date,
   input.form-time,
-  f textarea.form-textarea {
+  textarea.form-textarea {
     background-color: white;
   }
 
-  .form-type-textfield,
+  :is(.form-type-textfield,
   .form-type-number,
   .form-type-select,
   .form-type-email,
   .form-type-password,
-  .form-type-tel {
+  .form-type-tel) {
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
 
     input {
-      flex: 1 1 calc(100% - var(--labelWidth));
+      flex: 1 1 calc(100% - var(--labelWidth) - 1ch);
       min-width: 150px;
     }
   }
@@ -389,6 +386,10 @@
     label {
       width: 122px;
     }
+  }
+
+  .form-type-date {
+    margin: 0;
   }
 
   label,
@@ -582,10 +583,6 @@
           display: none;
         }
       }
-
-      #edit-roles {
-        display: block;
-      }
     }
 
     #edit-group-user-login-info {
@@ -736,20 +733,8 @@
     }
 
     #edit-roles {
+      display: block;
       column-width: 150px;
-
-      .form-item {
-        margin: 0;
-        display: flex;
-
-        &.form-type-textfield {
-          display: inline-block;
-        }
-
-        input {
-          flex: 0 0 auto;
-        }
-      }
     }
 
     .field--name-user-picture {
@@ -797,14 +782,6 @@
 
     .paragraphs-add-wrapper {
       text-align: center;
-    }
-
-    :is(.form-radios, .form-checkboxes) {
-      column-width: 150px;
-
-      .form-item {
-        margin: 0;
-      }
     }
   }
 
@@ -1406,7 +1383,7 @@
     }
 
     .form-item {
-      margin: 0.75em 0;
+      margin: 0;
     }
   }
 
@@ -1969,6 +1946,27 @@ form#pathauto-pattern-list {
   }
 }
 
+:is(.form-radios, .form-checkboxes) {
+  column-width: 150px;
+
+  .form-item {
+    margin: 0;
+    display: flex;
+
+    &.form-type-textfield {
+      display: inline-block;
+    }
+
+    input {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+#edit-field-gender {
+  column-width: 100px;
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   position: relative;
@@ -2267,5 +2265,64 @@ form#pathauto-pattern-list {
     .details-wrapper {
       padding: 0;
     }
+  }
+}
+
+:is(#edit-group-basic-user-info, #edit-group-basic-info) {
+  .field {
+    display: flex;
+  }
+  .field__label {
+    min-width: 17ch;
+  }
+}
+
+#edit-group-source-fields {
+  > .details-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-flow: row wrap;
+    width: calc(100% - 3em);
+  }
+  :is(.form-type-entity-autocomplete, .field--type-datetime) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+
+    :is(label, .label) {
+      margin: 0;
+    }
+    :is(input, [data-drupal-field-elements="date"]) {
+      flex: 1 1 0;
+    }
+
+    :is(.form-type-date) {
+      margin: 0;
+    }
+  }
+  [data-drupal-selector="edit-group-client-acquisition-col-1"] {
+    flex: 2 1 0;
+  }
+  [data-drupal-selector="edit-group-client-acquisition-col-2"] {
+    flex: 1 2 0;
+  }
+}
+
+#edit_field_source_chosen {
+  flex: 1;
+}
+
+#edit-field-enrolled-client-programs {
+  column-width: 200px;
+}
+
+#edit-field-notes-wrapper {
+  .field--name-field-date {
+    display: inline-block;
+    margin-right: 3em;
+  }
+  .field--name-field-staff-user {
+    display: inline-block;
   }
 }

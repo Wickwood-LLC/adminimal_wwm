@@ -43,8 +43,6 @@
 .adminimal .responsive-table table {
   border: 0;
   background-color: white;
-}
-.adminimal .responsive-table table.field-multiple-table {
   margin-bottom: 0;
 }
 .adminimal table.permissions tr > :is(th, td):first-child {
@@ -280,30 +278,33 @@
 .adminimal input.form-file,
 .adminimal input.form-date,
 .adminimal input.form-time,
-.adminimal f textarea.form-textarea {
+.adminimal textarea.form-textarea {
   background-color: white;
 }
-.adminimal .form-type-textfield,
-.adminimal .form-type-number,
-.adminimal .form-type-select,
-.adminimal .form-type-email,
-.adminimal .form-type-password,
-.adminimal .form-type-tel {
+.adminimal :is(.form-type-textfield,
+.form-type-number,
+.form-type-select,
+.form-type-email,
+.form-type-password,
+.form-type-tel) {
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
 }
-.adminimal .form-type-textfield input,
-.adminimal .form-type-number input,
-.adminimal .form-type-select input,
-.adminimal .form-type-email input,
-.adminimal .form-type-password input,
-.adminimal .form-type-tel input {
-  flex: 1 1 calc(100% - var(--labelWidth));
+.adminimal :is(.form-type-textfield,
+.form-type-number,
+.form-type-select,
+.form-type-email,
+.form-type-password,
+.form-type-tel) input {
+  flex: 1 1 calc(100% - var(--labelWidth) - 1ch);
   min-width: 150px;
 }
 .adminimal .form-type-password label {
   width: 122px;
+}
+.adminimal .form-type-date {
+  margin: 0;
 }
 .adminimal label,
 .adminimal .label {
@@ -463,9 +464,6 @@
 .adminimal #user-form #edit-group-website-user-information #edit-status--wrapper .form-item-status label:after {
   display: none;
 }
-.adminimal #user-form #edit-group-website-user-information #edit-roles {
-  display: block;
-}
 .adminimal #user-form #edit-group-user-login-info .form-type-textfield label,
 .adminimal #user-form #edit-group-user-login-info .form-type-textfield .label,
 .adminimal #user-form #edit-group-user-login-info .form-type-select label,
@@ -588,18 +586,9 @@
   margin-right: 2em;
 }
 .adminimal #user-form #edit-roles {
+  display: block;
   -moz-column-width: 150px;
        column-width: 150px;
-}
-.adminimal #user-form #edit-roles .form-item {
-  margin: 0;
-  display: flex;
-}
-.adminimal #user-form #edit-roles .form-item.form-type-textfield {
-  display: inline-block;
-}
-.adminimal #user-form #edit-roles .form-item input {
-  flex: 0 0 auto;
 }
 .adminimal #user-form .field--name-user-picture .image-widget {
   display: flex;
@@ -639,13 +628,6 @@
 }
 .adminimal #user-form .paragraphs-add-wrapper {
   text-align: center;
-}
-.adminimal #user-form :is(.form-radios, .form-checkboxes) {
-  -moz-column-width: 150px;
-       column-width: 150px;
-}
-.adminimal #user-form :is(.form-radios, .form-checkboxes) .form-item {
-  margin: 0;
 }
 .adminimal .toolbar .toolbar-tray-vertical {
   border: none;
@@ -1080,7 +1062,7 @@
   margin: 0;
 }
 .adminimal table.field-multiple-table .form-item {
-  margin: 0.75em 0;
+  margin: 0;
 }
 .adminimal .layout-region-node-footer__content {
   border-top: none;
@@ -1479,6 +1461,26 @@ form#pathauto-pattern-list td:nth-child(2) {
   padding: 0;
 }
 
+:is(.form-radios, .form-checkboxes) {
+  -moz-column-width: 150px;
+       column-width: 150px;
+}
+:is(.form-radios, .form-checkboxes) .form-item {
+  margin: 0;
+  display: flex;
+}
+:is(.form-radios, .form-checkboxes) .form-item.form-type-textfield {
+  display: inline-block;
+}
+:is(.form-radios, .form-checkboxes) .form-item input {
+  flex: 0 0 auto;
+}
+
+#edit-field-gender {
+  -moz-column-width: 100px;
+       column-width: 100px;
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   position: relative;
@@ -1741,4 +1743,56 @@ form#pathauto-pattern-list td:nth-child(2) {
 }
 .paragraphs-subform .field--name-field-address .details-wrapper {
   padding: 0;
+}
+
+:is(#edit-group-basic-user-info, #edit-group-basic-info) .field {
+  display: flex;
+}
+:is(#edit-group-basic-user-info, #edit-group-basic-info) .field__label {
+  min-width: 17ch;
+}
+
+#edit-group-source-fields > .details-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-flow: row wrap;
+  width: calc(100% - 3em);
+}
+#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) :is(label, .label) {
+  margin: 0;
+}
+#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) :is(input, [data-drupal-field-elements=date]) {
+  flex: 1 1 0;
+}
+#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) :is(.form-type-date) {
+  margin: 0;
+}
+#edit-group-source-fields [data-drupal-selector=edit-group-client-acquisition-col-1] {
+  flex: 2 1 0;
+}
+#edit-group-source-fields [data-drupal-selector=edit-group-client-acquisition-col-2] {
+  flex: 1 2 0;
+}
+
+#edit_field_source_chosen {
+  flex: 1;
+}
+
+#edit-field-enrolled-client-programs {
+  -moz-column-width: 200px;
+       column-width: 200px;
+}
+
+#edit-field-notes-wrapper .field--name-field-date {
+  display: inline-block;
+  margin-right: 3em;
+}
+#edit-field-notes-wrapper .field--name-field-staff-user {
+  display: inline-block;
 }/*# sourceMappingURL=adminimal_wwm.css.map */
