@@ -1053,6 +1053,7 @@
 }
 .adminimal table.field-multiple-table td {
   padding: 0.5em;
+  min-width: 0;
 }
 .adminimal table.field-multiple-table .field-multiple-drag {
   width: unset;
@@ -1065,7 +1066,7 @@
   margin: 0;
 }
 .adminimal table.field-multiple-table .form-item {
-  margin: 0;
+  margin: 0.5em 0;
 }
 .adminimal .layout-region-node-footer__content {
   border-top: none;
@@ -1477,6 +1478,14 @@ form#pathauto-pattern-list td:nth-child(2) {
 }
 :is(.form-radios, .form-checkboxes) > div.form-item input {
   flex: 0 0 auto;
+}
+
+#edit-type {
+  -moz-column-width: unset;
+       column-width: unset;
+}
+#edit-type .form-item {
+  display: block;
 }
 
 #edit-field-gender {
