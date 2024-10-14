@@ -50,7 +50,8 @@
       left: 0;
     }
 
-    > table, table.field-multiple-table {
+    > table,
+    table.field-multiple-table {
       border: 0;
       background-color: white;
       margin-bottom: 0;
@@ -367,12 +368,15 @@
     background-color: white;
   }
 
-  :is(.form-type-textfield,
-  .form-type-number,
-  .form-type-select,
-  .form-type-email,
-  .form-type-password,
-  .form-type-tel) {
+  :is(
+      .form-type-textfield,
+      .form-type-number,
+      .form-type-select,
+      .form-type-email,
+      .form-type-password,
+      .form-type-tel,
+      .field--type-datetime
+    ) {
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
@@ -381,6 +385,10 @@
       flex: 1 1 calc(100% - var(--labelWidth) - 1ch);
       min-width: 150px;
     }
+  }
+
+  .form-type-select .chosen-container {
+    flex: 1 1 fit-content;
   }
 
   .form-type-password {
@@ -1968,7 +1976,7 @@ form#pathauto-pattern-list {
     }
   }
 }
-:is(#edit-type, #edit-user-register, #edit-user-cancel-method) {
+:is([id*="edit-type"], #edit-user-register, #edit-user-cancel-method) {
   column-width: unset;
 
   .form-item {
@@ -2290,7 +2298,7 @@ form#pathauto-pattern-list {
   }
 }
 
-#edit-group-source-fields {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) {
   > .details-wrapper {
     display: flex;
     gap: 1rem;
@@ -2314,10 +2322,10 @@ form#pathauto-pattern-list {
       margin: 0;
     }
   }
-  [data-drupal-selector="edit-group-client-acquisition-col-1"] {
+  [data-drupal-selector="edit-group-col-1"] {
     flex: 2 1 0;
   }
-  [data-drupal-selector="edit-group-client-acquisition-col-2"] {
+  [data-drupal-selector="edit-group-col-2"] {
     flex: 1 2 0;
   }
 }
@@ -2337,5 +2345,20 @@ form#pathauto-pattern-list {
   }
   .field--name-field-staff-user {
     display: inline-block;
+  }
+}
+
+#edit-extra-field-bwma-user-rendereduser-phone-email-address {
+  .field--name-field-phone > .field__item {
+    margin: 0.5em 0;
+  }
+}
+
+.flex-group {
+  display: flex;
+  gap: 0.5rem;
+
+  .field--name-field-phone-type {
+    font-weight: bold;
   }
 }

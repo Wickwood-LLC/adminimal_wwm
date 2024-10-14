@@ -41,7 +41,8 @@
   position: sticky;
   left: 0;
 }
-.adminimal .responsive-table > table, .adminimal .responsive-table table.field-multiple-table {
+.adminimal .responsive-table > table,
+.adminimal .responsive-table table.field-multiple-table {
   border: 0;
   background-color: white;
   margin-bottom: 0;
@@ -287,7 +288,8 @@
 .form-type-select,
 .form-type-email,
 .form-type-password,
-.form-type-tel) {
+.form-type-tel,
+.field--type-datetime) {
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
@@ -297,9 +299,13 @@
 .form-type-select,
 .form-type-email,
 .form-type-password,
-.form-type-tel) input {
+.form-type-tel,
+.field--type-datetime) input {
   flex: 1 1 calc(100% - var(--labelWidth) - 1ch);
   min-width: 150px;
+}
+.adminimal .form-type-select .chosen-container {
+  flex: 1 1 fit-content;
 }
 .adminimal .form-type-password label {
   width: 122px;
@@ -1481,11 +1487,11 @@ form#pathauto-pattern-list td:nth-child(2) {
   flex: 0 0 auto;
 }
 
-:is(#edit-type, #edit-user-register, #edit-user-cancel-method) {
+:is([id*=edit-type], #edit-user-register, #edit-user-cancel-method) {
   -moz-column-width: unset;
        column-width: unset;
 }
-:is(#edit-type, #edit-user-register, #edit-user-cancel-method) .form-item {
+:is([id*=edit-type], #edit-user-register, #edit-user-cancel-method) .form-item {
   display: block;
 }
 
@@ -1765,31 +1771,31 @@ form#pathauto-pattern-list td:nth-child(2) {
   min-width: 17ch;
 }
 
-#edit-group-source-fields > .details-wrapper {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) > .details-wrapper {
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
   width: calc(100% - 3em);
 }
-#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) {
   display: flex;
   flex-flow: row wrap;
   gap: 0.5rem;
   align-items: baseline;
 }
-#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) :is(label, .label) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(label, .label) {
   margin: 0;
 }
-#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) :is(input, [data-drupal-field-elements=date]) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(input, [data-drupal-field-elements=date]) {
   flex: 1 1 0;
 }
-#edit-group-source-fields :is(.form-type-entity-autocomplete, .field--type-datetime) :is(.form-type-date) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(.form-type-date) {
   margin: 0;
 }
-#edit-group-source-fields [data-drupal-selector=edit-group-client-acquisition-col-1] {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) [data-drupal-selector=edit-group-col-1] {
   flex: 2 1 0;
 }
-#edit-group-source-fields [data-drupal-selector=edit-group-client-acquisition-col-2] {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition) [data-drupal-selector=edit-group-col-2] {
   flex: 1 2 0;
 }
 
@@ -1808,4 +1814,16 @@ form#pathauto-pattern-list td:nth-child(2) {
 }
 #edit-field-notes-wrapper .field--name-field-staff-user {
   display: inline-block;
+}
+
+#edit-extra-field-bwma-user-rendereduser-phone-email-address .field--name-field-phone > .field__item {
+  margin: 0.5em 0;
+}
+
+.flex-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.flex-group .field--name-field-phone-type {
+  font-weight: bold;
 }/*# sourceMappingURL=adminimal_wwm.css.map */
