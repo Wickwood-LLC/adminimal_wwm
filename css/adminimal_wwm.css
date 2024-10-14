@@ -1481,11 +1481,11 @@ form#pathauto-pattern-list td:nth-child(2) {
   flex: 0 0 auto;
 }
 
-#edit-type {
+:is(#edit-type, #edit-user-register, #edit-user-cancel-method) {
   -moz-column-width: unset;
        column-width: unset;
 }
-#edit-type .form-item {
+:is(#edit-type, #edit-user-register, #edit-user-cancel-method) .form-item {
   display: block;
 }
 

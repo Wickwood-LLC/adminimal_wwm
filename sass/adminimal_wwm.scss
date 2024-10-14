@@ -1968,8 +1968,7 @@ form#pathauto-pattern-list {
     }
   }
 }
-
-#edit-type {
+:is(#edit-type, #edit-user-register, #edit-user-cancel-method) {
   column-width: unset;
 
   .form-item {
