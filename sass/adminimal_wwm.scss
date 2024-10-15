@@ -2298,7 +2298,7 @@ form#pathauto-pattern-list {
   }
 }
 
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) {
   > .details-wrapper {
     display: flex;
     gap: 1rem;

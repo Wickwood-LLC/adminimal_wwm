@@ -1771,31 +1771,31 @@ form#pathauto-pattern-list td:nth-child(2) {
   min-width: 17ch;
 }
 
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) > .details-wrapper {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) > .details-wrapper {
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
   width: calc(100% - 3em);
 }
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) :is(.form-type-entity-autocomplete, .field--type-datetime) {
   display: flex;
   flex-flow: row wrap;
   gap: 0.5rem;
   align-items: baseline;
 }
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(label, .label) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(label, .label) {
   margin: 0;
 }
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(input, [data-drupal-field-elements=date]) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(input, [data-drupal-field-elements=date]) {
   flex: 1 1 0;
 }
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(.form-type-date) {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) :is(.form-type-entity-autocomplete, .field--type-datetime) :is(.form-type-date) {
   margin: 0;
 }
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) [data-drupal-selector=edit-group-col-1] {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) [data-drupal-selector=edit-group-col-1] {
   flex: 2 1 0;
 }
-:is(#edit-group-source-fields, #edit-group-consultant-acquisition) [data-drupal-selector=edit-group-col-2] {
+:is(#edit-group-source-fields, #edit-group-consultant-acquisition, #edit-group-ref-acq) [data-drupal-selector=edit-group-col-2] {
   flex: 1 2 0;
 }
 
