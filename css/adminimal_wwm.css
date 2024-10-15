@@ -1075,6 +1075,9 @@
 .adminimal table.field-multiple-table .form-item {
   margin: 0.5em 0;
 }
+.adminimal table.field-multiple-table .form-item.form-type-textarea {
+  margin: 0;
+}
 .adminimal .layout-region-node-footer__content {
   border-top: none;
 }
@@ -1808,11 +1811,11 @@ form#pathauto-pattern-list td:nth-child(2) {
        column-width: 200px;
 }
 
-#edit-field-notes-wrapper .field--name-field-date {
+:is(#edit-field-notes-wrapper, #edit-field-staff-notes-wrapper) :is(.field--name-field-date, .field--name-field-staff-note-date) {
   display: inline-block;
   margin-right: 3em;
 }
-#edit-field-notes-wrapper .field--name-field-staff-user {
+:is(#edit-field-notes-wrapper, #edit-field-staff-notes-wrapper) :is(.field--name-field-staff-user, .field--name-field-staff-admin) {
   display: inline-block;
 }
 
